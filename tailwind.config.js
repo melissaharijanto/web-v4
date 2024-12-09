@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         Manrope: ["Manrope", "sans-serif"],
         Shippori: ["Shippori Antique B1", "sans-serif"]
+      },
+      color: {
+        white: "#F5F5F5",
       }
     },
   },
