@@ -11,6 +11,9 @@ module.exports = {
       },
       color: {
         white: "#F5F5F5",
+      },
+      animation: {
+        'spin-slow': 'spin 4s linear infinite',
       }
     },
   },
