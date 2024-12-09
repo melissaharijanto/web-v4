@@ -9,25 +9,27 @@ const NavigationBar = () => {
                 <Logo width="w-16" />
             </div>
             <div className="flex flex-1 gap-x-8 justify-center">
-                <a href="" className={`${styles['navbar-link']}`}>
+                <a href="#home" className={`${styles['navbar-link']}`}>
                     Home
                     <span className={`${styles['navbar-underline']}`} />
                 </a>
-                <a href="" className={`${styles['navbar-link']}`}>
+                <a href="#about" className={`${styles['navbar-link']}`}>
                     About
                     <span className={`${styles['navbar-underline']}`} />
                 </a>
-                <a href="" className={`${styles['navbar-link']}`}>
+                <a href="#experience" className={`${styles['navbar-link']}`}>
                     Experience
                     <span className={`${styles['navbar-underline']}`} />
                 </a>
-                <a href="" className={`${styles['navbar-link']}`}>
+                <a href="#projects" className={`${styles['navbar-link']}`}>
                     Projects
                     <span className={`${styles['navbar-underline']}`} />
                 </a>
             </div>
             <div className="mx-8 flex flex-1 justify-end">
-                <a href="" className={`${styles['navbar-link']}`}>
+                <a
+                    href="mailto:melissaharijanto18@gmail.com"
+                    className={`${styles['navbar-link']}`}>
                     <div className="flex gap-x-2 justify-center items-center">
                         Contact Me
                         <DiagonalArrow
