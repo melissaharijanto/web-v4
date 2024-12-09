@@ -5,9 +5,9 @@ export const styles = {
     'header-xl': 'text-white font-shippori text-8xl',  
     'subheading': 'text-white font-manrope text-xl font-semibold',
 
-    'transparent-button':'border-[1px] text-black border-white border-[1px] transition-all ease-in hover:font-bold',
-    'blue-button':'border-[1px] text-black border-blue bg-blue hover:bg-blue-pressed hover:border-blue-pressed transition-all ease-in hover:font-bold',
-    'button-with-right-arrow':'pl-4 pr-2 py-2 rounded-3xl gap-x-1 flex items-center justify-between',
+    'transparent-button':'border-[1px] text-black border-white border-[1px] transition-all ease-in hover:font-bold rounded-full',
+    'blue-button':'border-[1px] text-black border-blue bg-blue hover:bg-blue-pressed hover:border-blue-pressed rounded-full transition-all ease-in hover:font-bold',
+    'button-with-arrow':'pl-4 pr-2 py-2 gap-x-1 flex items-center justify-between',
     'subheading-black': 'text-black font-manrope text-xl font-semibold',
     'button-text': 'text-white font-manrope text-lg font-semibold',
     'button-text-black': 'text-black font-manrope text-lg font-semibold',
