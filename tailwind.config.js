@@ -15,6 +15,7 @@ module.exports = {
         yellow: "#ffbd59",
         red: "#FF746C",
         blue: "#589cf6",
+        "blue-pressed": "#4179cc",
       },
       animation: {
         'spin-slow': 'spin 4s linear infinite',
