@@ -45,7 +45,7 @@ const Home = () => {
             <div className="flex gap-x-4 mt-8">
                 <button
                     onClick={navigateToLinkedin}
-                    className={`${styles['button-text-black']} ${styles['blue-button']} ${styles['button-with-arrow']}`}>
+                    className={`${styles['button-text-black']} ${styles['blue-button']} ${styles['button-with-right-arrow']}`}>
                     LinkedIn Profile &nbsp;
                     <div className="bg-black rounded-full p-2">
                         <RightArrow width="w-4" fill="fill-white" />
