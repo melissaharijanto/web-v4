@@ -1,4 +1,4 @@
-import { styles } from '../styles';
+import { styles } from '../utils/css/styles';
 import Flower from './svgs/Flower';
 
 const SubheadingTitle = ({

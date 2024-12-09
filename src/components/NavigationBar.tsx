@@ -1,4 +1,5 @@
-import { styles } from '../styles';
+import { styles } from '../utils/css/styles';
+import { links } from '../utils/data/links';
 import DiagonalArrow from './svgs/DiagonalArrow';
 import Logo from './svgs/Logo';
 
@@ -27,9 +28,7 @@ const NavigationBar = () => {
                 </a>
             </div>
             <div className="mx-8 flex flex-1 justify-end">
-                <a
-                    href="mailto:melissaharijanto18@gmail.com"
-                    className={`${styles['navbar-link']}`}>
+                <a href={links.email} className={`${styles['navbar-link']}`}>
                     <div className="flex gap-x-2 justify-center items-center">
                         Contact Me
                         <DiagonalArrow

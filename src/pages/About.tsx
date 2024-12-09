@@ -1,8 +1,9 @@
 import { Description, GitHub, LinkedIn } from '@mui/icons-material';
 import DiagonalArrow from '../components/svgs/DiagonalArrow';
-import { styles } from '../styles';
+import { styles } from '../utils/css/styles';
 import SubheadingTitle from '../components/SubheadingTitle';
 import AboutLink from '../components/AboutLink';
+import { links } from '../utils/data/links';
 
 const About = () => {
     return (
@@ -82,9 +83,21 @@ const About = () => {
                         Other ways to <br />{' '}
                         <span className="text-yellow">connect</span> with me:
                     </p>
-                    <AboutLink url="" Icon={GitHub} label="GITHUB" />
-                    <AboutLink url="" Icon={LinkedIn} label="LINKEDIN" />
-                    <AboutLink url="" Icon={Description} label="RESUME" />
+                    <AboutLink
+                        url={links.github}
+                        Icon={GitHub}
+                        label="GITHUB"
+                    />
+                    <AboutLink
+                        url={links.linkedin}
+                        Icon={LinkedIn}
+                        label="LINKEDIN"
+                    />
+                    <AboutLink
+                        url={links.resume}
+                        Icon={Description}
+                        label="RESUME"
+                    />
                 </div>
             </div>
         </div>

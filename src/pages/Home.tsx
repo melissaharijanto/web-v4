@@ -1,5 +1,5 @@
 import Flower from '../components/svgs/Flower';
-import { styles } from '../styles';
+import { styles } from '../utils/css/styles';
 import RightArrow from '../components/svgs/RightArrow';
 
 const Home = () => {
