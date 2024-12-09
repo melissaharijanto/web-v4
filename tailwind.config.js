@@ -6,11 +6,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Manrope: ["Manrope", "sans-serif"],
-        Shippori: ["Shippori Antique B1", "sans-serif"]
+        pjs: ["Plus Jakarta Sans", "sans-serif"],
+        shippori: ["Shippori Antique B1", "sans-serif"]
       },
-      color: {
+      colors: {
         white: "#F5F5F5",
+        black: "#1e1e1e"
       },
       animation: {
         'spin-slow': 'spin 4s linear infinite',
