@@ -1,8 +1,8 @@
 import { Description, GitHub, LinkedIn } from '@mui/icons-material';
 import DiagonalArrow from '../components/svgs/DiagonalArrow';
-import Flower from '../components/svgs/Flower';
 import { styles } from '../styles';
 import SubheadingTitle from '../components/SubheadingTitle';
+import AboutLink from '../components/AboutLink';
 
 const About = () => {
     return (
@@ -82,42 +82,9 @@ const About = () => {
                         Other ways to <br />{' '}
                         <span className="text-yellow">connect</span> with me:
                     </p>
-                    <div className="group relative inline-block">
-                        <a
-                            href=""
-                            className={`flex items-center ${styles['header-sm']} gap-x-3`}>
-                            <GitHub fontSize="large" className="text-white" />
-                            GITHUB
-                            <DiagonalArrow fill="fill-white" width="w-4" />
-                        </a>
-                        <span
-                            className={`${styles['navbar-underline']}`}></span>
-                    </div>
-                    <div className="group relative inline-block">
-                        <a
-                            href=""
-                            className={`flex justify-center items-center ${styles['header-sm']} gap-x-2`}>
-                            <LinkedIn fontSize="large" className="text-white" />
-                            LINKEDIN
-                            <DiagonalArrow fill="fill-white" width="w-4" />
-                        </a>
-                        <span
-                            className={`${styles['navbar-underline']}`}></span>
-                    </div>
-                    <div className="group relative inline-block">
-                        <a
-                            href=""
-                            className={`flex justify-center items-center ${styles['header-sm']} gap-x-2`}>
-                            <Description
-                                fontSize="large"
-                                className="text-white"
-                            />
-                            RESUME
-                            <DiagonalArrow fill="fill-white" width="w-4" />
-                        </a>
-                        <span
-                            className={`${styles['navbar-underline']}`}></span>
-                    </div>
+                    <AboutLink url="" Icon={GitHub} label="GITHUB" />
+                    <AboutLink url="" Icon={LinkedIn} label="LINKEDIN" />
+                    <AboutLink url="" Icon={Description} label="RESUME" />
                 </div>
             </div>
         </div>
