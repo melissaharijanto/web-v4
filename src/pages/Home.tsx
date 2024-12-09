@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div
             id="home"
-            className="w-full flex flex-col justify-center items-center min-h-screen bg-black h-screen">
+            className={`${styles.page} flex flex-col justify-center items-center`}>
             <p className={`${styles['header-sm']} mb-2`}>
                 &mdash; &nbsp;HELLO, I AM
             </p>
@@ -45,7 +45,7 @@ const Home = () => {
             <div className="flex gap-x-4 mt-8">
                 <button
                     onClick={navigateToLinkedin}
-                    className={`${styles['button-text-black']} border-[1px] text-black! border-blue bg-blue hover:bg-blue-pressed hover:border-blue-pressed transition-all ease-in hover:font-bold pl-4 pr-2 py-2 rounded-3xl gap-x-1 flex items-center justify-between`}>
+                    className={`${styles['button-text-black']} ${styles['blue-button']} ${styles['button-with-right-arrow']}`}>
                     LinkedIn Profile &nbsp;
                     <div className="bg-black rounded-full p-2">
                         <RightArrow width="w-4" fill="fill-white" />
