@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div
             id="home"
-            className="w-full flex flex-col justify-center items-center min-h-screen bg-[#1e1e1e] h-screen">
+            className="w-full flex flex-col justify-center items-center min-h-screen bg-black h-screen">
             <p className={`${styles['header-sm']} mb-2`}>
                 &mdash; &nbsp;HELLO, I AM
             </p>
