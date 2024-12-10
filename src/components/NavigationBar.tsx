@@ -5,9 +5,11 @@ import Logo from './svgs/Logo';
 
 const NavigationBar = () => {
     return (
-        <div className="fixed top-0 left-0 w-full flex items-center justify-between p-4 bg-gradient-to-b from-[#121212] to-transparent">
+        <div className="fixed top-0 left-0 w-full flex items-center justify-between p-4 bg-gradient-to-b from-[#121212] to-transparent backdrop-blur-md z-10">
             <div className="mx-8 flex-1">
-                <Logo width="w-16" />
+                <a href="#home">
+                    <Logo width="w-16" />
+                </a>
             </div>
             <div className="flex flex-1 gap-x-8 justify-center">
                 <a href="#home" className={`${styles['navbar-link']}`}>
