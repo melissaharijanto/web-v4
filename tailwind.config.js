@@ -10,7 +10,7 @@ module.exports = {
         manrope: ["Manrope", "sans-serif"]
       },
       colors: {
-        white: "#F5F5F5",
+        white: "#F2F3F4",
         black: "#1e1e1e",
         yellow: "#ffbd59",
         red: "#FF746C",
