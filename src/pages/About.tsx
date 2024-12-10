@@ -42,14 +42,10 @@ const About = () => {
                                     <span className="text-red font-semibold">
                                         Python
                                     </span>{' '}
-                                    to create tools for enhanced productivity in
-                                    ideation workshops, as well as a chatbot
-                                    that provides students with helpful hints
-                                    for Object-Oriented Programming assignments.
+                                    to create tools for enhanced productivity.
                                 </li>
                                 <li>
-                                    Designing and developing a student forum
-                                    with{' '}
+                                    Developing a student forum with{' '}
                                     <span className="text-red font-semibold">
                                         React Typescript
                                     </span>{' '}
@@ -70,9 +66,8 @@ const About = () => {
                                 efficient, scalable, and user-friendly
                                 applications
                             </span>
-                            . When I’m not coding, I also enjoy designing fun
-                            posters or participating in hackathons to solve
-                            interesting challenges.
+                            . When I’m not coding, I enjoy designing fun posters
+                            or discovering new music to listen to.
                         </p>
                         <br />
                         <p className="text-white font-manrope text-justify">
@@ -90,28 +85,31 @@ const About = () => {
                     </div>
                 </div>
                 <div className="flex justify-center items-center">
-                    <div className="w-[0.5px] bg-white min-h-full"></div>
+                    <div className="w-[0.5px] bg-white min-h-full py-4"></div>
                 </div>
-                <div className="flex flex-col items-start gap-y-4">
-                    <p className={`${styles.subheading} text-left`}>
-                        Other ways to <br />{' '}
-                        <span className="text-yellow">connect</span> with me:
-                    </p>
-                    <AboutLink
-                        url={links.github}
-                        Icon={GitHub}
-                        label="GITHUB"
-                    />
-                    <AboutLink
-                        url={links.linkedin}
-                        Icon={LinkedIn}
-                        label="LINKEDIN"
-                    />
-                    <AboutLink
-                        url={links.resume}
-                        Icon={Description}
-                        label="RESUME"
-                    />
+                <div>
+                    <div className="flex flex-col items-start gap-y-4">
+                        <p className={`${styles.subheading} text-left`}>
+                            Other ways to{' '}
+                            <span className="text-yellow">connect</span> with
+                            me:
+                        </p>
+                        <AboutLink
+                            url={links.github}
+                            Icon={GitHub}
+                            label="GITHUB"
+                        />
+                        <AboutLink
+                            url={links.linkedin}
+                            Icon={LinkedIn}
+                            label="LINKEDIN"
+                        />
+                        <AboutLink
+                            url={links.resume}
+                            Icon={Description}
+                            label="RESUME"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
