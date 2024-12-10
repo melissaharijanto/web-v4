@@ -11,9 +11,9 @@ const About = () => {
             className={`${styles.page} flex flex-col justify-center items-center`}
             id="about">
             <SubheadingTitle title="ABOUT ME" flowerFill="fill-red" />
-            <div className="flex justify-center gap-x-8 mt-10 ">
-                <div className="flex-col flex items-start max-w-[50vw]">
-                    <div className="mx-8 flex flex-col items-start">
+            <div className="flex justify-center gap-x-8 mt-10  max-w-[60vw]">
+                <div className="flex-col flex items-start">
+                    <div className="flex flex-col items-start">
                         <p className="text-white font-manrope text-justify">
                             Hi, I’m Melissa, a software engineer passionate
                             about turning creative ideas into functional and
@@ -30,15 +30,29 @@ const About = () => {
                             work on some exciting projects, such as:
                             <ul className="list-disc mx-4">
                                 <li>
-                                    Using Generative AI APIs with other tools
-                                    like Streamlit and Python to create tools
-                                    for enhanced productivity in ideation
-                                    workshops, as well as a chatbot that
-                                    provides students with helpful hints for
-                                    Object-Oriented Programming assignments.
+                                    Using{' '}
+                                    <span className="text-red font-semibold">
+                                        Generative AI APIs
+                                    </span>{' '}
+                                    with other tools like{' '}
+                                    <span className="text-red font-semibold">
+                                        Streamlit
+                                    </span>{' '}
+                                    and{' '}
+                                    <span className="text-red font-semibold">
+                                        Python
+                                    </span>{' '}
+                                    to create tools for enhanced productivity in
+                                    ideation workshops, as well as a chatbot
+                                    that provides students with helpful hints
+                                    for Object-Oriented Programming assignments.
                                 </li>
                                 <li>
                                     Designing and developing a student forum
+                                    with{' '}
+                                    <span className="text-red font-semibold">
+                                        React Typescript
+                                    </span>{' '}
                                     that helps over 100 users connect and share
                                     knowledge, with a focus on seamless mobile
                                     responsiveness.
