@@ -10,10 +10,10 @@ const About = () => {
         <div
             className={`${styles.page} flex flex-col justify-center items-center`}
             id="about">
-            <div className="flex justify-center gap-x-8">
-                <div className="flex-col flex items-start max-w-[60vw]">
-                    <SubheadingTitle title="ABOUT ME" flowerFill="fill-red" />
-                    <div className="mx-8  mt-10 flex flex-col items-start">
+            <SubheadingTitle title="ABOUT ME" flowerFill="fill-red" />
+            <div className="flex justify-center gap-x-8 mt-10 ">
+                <div className="flex-col flex items-start max-w-[50vw]">
+                    <div className="mx-8 flex flex-col items-start">
                         <p className="text-white font-manrope text-justify">
                             Hi, I’m Melissa, a software engineer passionate
                             about turning creative ideas into functional and
