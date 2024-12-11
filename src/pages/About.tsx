@@ -75,7 +75,7 @@ const About = () => {
                             on an exciting project or just chat about tech!
                         </p>
                         <a
-                            href="mailto:melissaharijanto18@gmail.com"
+                            href={links.email}
                             className={`${styles['button-text']} ${styles['button']} ${styles['button-with-diagonal-arrow']} mt-10`}>
                             <span className="mb-1">Reach out via Email</span>
                             <DiagonalArrow
