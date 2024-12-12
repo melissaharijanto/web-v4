@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 
 const Experience = () => {
     return (
-        <div id="experience" className={`${styles.page}`}>
+        <div id="experience" className={`${styles.page} pt-4`}>
             <AnimationLayout className="flex flex-col justify-center items-center  min-h-screen">
                 <motion.div variants={childVariants}>
                     <SubheadingTitle
