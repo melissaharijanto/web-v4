@@ -22,8 +22,10 @@ const NavigationBar = () => {
     }, []);
     return (
         <div
-            className={`fixed top-0 left-0 w-full flex items-center justify-between p-4 backdrop-blur-md transition-all duration-300 ease-in  ${
-                isScrolled ? 'backdrop-opacity-100' : 'backdrop-opacity-0'
+            className={`fixed top-0 left-0 w-full flex items-center justify-between px-4 py-2 backdrop-blur-lg transition-all duration-300 ease-in  ${
+                isScrolled
+                    ? 'backdrop-opacity-100 bg-black/60'
+                    : 'backdrop-opacity-0'
             } z-10`}>
             <div className="mx-8 flex-1">
                 <a href="#home">
