@@ -1,9 +1,10 @@
 export const styles = {
-    'page': ' bg-black w-full p-20',
+    'page': 'min-h-screen bg-black w-full px-20',
     'header-sm': 'text-white font-shippori text-2xl',
+    'header-sm-black': 'text-black font-shippori text-2xl',
     'header-md': 'text-white font-shippori text-4xl',
     'header-md-no-color': 'font-shippori text-4xl',
-    'header-sm-black': 'text-black font-shippori text-2xl',
+    'header-lg': 'text-white font-shippori text-6xl',  
     'header-xl': 'text-white font-shippori text-8xl',  
     'subheading': 'text-white font-manrope text-xl font-semibold',
     'button':'border-[1px] bg-black text-black border-white border-[1px] hover:bg-black-pressed transition-all ease-in hover:font-bold rounded-full',
@@ -21,4 +22,5 @@ export const styles = {
     'exp-link': 'text-white font-manrope font-semibold text-sm hover:font-bold transition-all ease-in relative inline-block group',
     'exp-position': 'text-white font-manrope font-semibold text-lg',
     'exp-period': 'text-white font-manrope font-semibold text-md',
+    'mini-subheader': 'font-bold text-md font-shippori text-yellow tracking-widest'
 }
