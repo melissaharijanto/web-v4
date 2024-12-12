@@ -2,8 +2,6 @@ import { motion } from 'framer-motion';
 import { FC } from 'react';
 import { AnimationLayoutProps } from '../../utils/types/AnimationTypes';
 
-// TYPES
-
 const AnimationLayout: FC<AnimationLayoutProps> = ({ children, className }) => {
     const parentVariants = {
         hidden: {
