@@ -23,7 +23,7 @@ const RightArrow = ({
                 <clipPath id="c2b52176da">
                     <path
                         d="M 1461.4375 336.445312 L 2249.496094 1124.503906 L 2137.046875 1236.953125 L 1348.988281 448.894531 Z M 1461.4375 336.445312 "
-                        clip-rule="nonzero"
+                        clipRule="nonzero"
                     />
                 </clipPath>
                 <clipPath id="1adbfc1823">
@@ -45,8 +45,8 @@ const RightArrow = ({
                     />
                 </clipPath>
             </defs>
-            <g clip-path="url(#aeffebe9a7)">
-                <g clip-path="url(#c2b52176da)">
+            <g clipPath="url(#aeffebe9a7)">
+                <g clipPath="url(#c2b52176da)">
                     <path
                         className={fill}
                         d="M 1461.4375 336.445312 L 2249.46875 1124.472656 L 2137.019531 1236.921875 L 1348.988281 448.894531 Z M 1461.4375 336.445312 "
@@ -55,7 +55,7 @@ const RightArrow = ({
                     />
                 </g>
             </g>
-            <g clip-path="url(#1adbfc1823)">
+            <g clipPath="url(#1adbfc1823)">
                 <path
                     className={fill}
                     d="M 2169.980469 1204.007812 L 80.246094 1204.007812 L 80.246094 1044.980469 L 2169.980469 1044.980469 Z M 2169.980469 1204.007812 "
@@ -63,8 +63,8 @@ const RightArrow = ({
                     fillRule="nonzero"
                 />
             </g>
-            <g clip-path="url(#3535de0edb)">
-                <g clip-path="url(#b5af241e32)">
+            <g clipPath="url(#3535de0edb)">
+                <g clipPath="url(#b5af241e32)">
                     <path
                         className={fill}
                         d="M 2249.492188 1124.5 L 1461.460938 1912.527344 L 1349.011719 1800.078125 L 2137.039062 1012.050781 Z M 2249.492188 1124.5 "
