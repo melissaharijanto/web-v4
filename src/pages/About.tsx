@@ -50,34 +50,35 @@ const About = () => {
                                     Throughout my journey, I’ve had the
                                     opportunity to work on some exciting
                                     projects, such as:
-                                    <ul className="list-disc mx-4">
-                                        <li>
-                                            Using{' '}
-                                            <span className="text-red font-semibold">
-                                                Generative AI APIs
-                                            </span>{' '}
-                                            with other tools like{' '}
-                                            <span className="text-red font-semibold">
-                                                Streamlit
-                                            </span>{' '}
-                                            and{' '}
-                                            <span className="text-red font-semibold">
-                                                Python
-                                            </span>{' '}
-                                            to create tools for enhanced
-                                            productivity.
-                                        </li>
-                                        <li>
-                                            Developing a student forum with{' '}
-                                            <span className="text-red font-semibold">
-                                                React Typescript
-                                            </span>{' '}
-                                            that helps over 100 users connect
-                                            and share knowledge, with a focus on
-                                            seamless mobile responsiveness.
-                                        </li>
-                                    </ul>
                                 </p>
+                                <ul className="list-disc mx-4 text-white font-manrope text-justify">
+                                    <li>
+                                        Using{' '}
+                                        <span className="text-red font-semibold">
+                                            Generative AI APIs
+                                        </span>{' '}
+                                        with other tools like{' '}
+                                        <span className="text-red font-semibold">
+                                            Streamlit
+                                        </span>{' '}
+                                        and{' '}
+                                        <span className="text-red font-semibold">
+                                            Python
+                                        </span>{' '}
+                                        to create tools for enhanced
+                                        productivity.
+                                    </li>
+                                    <li>
+                                        Developing a student forum with{' '}
+                                        <span className="text-red font-semibold">
+                                            React Typescript
+                                        </span>{' '}
+                                        that helps over 100 users connect and
+                                        share knowledge, with a focus on
+                                        seamless mobile responsiveness.
+                                    </li>
+                                </ul>
+
                                 <br />
                                 <p className="text-white font-manrope text-justify">
                                     I’m always excited to work with{' '}
