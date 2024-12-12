@@ -5,10 +5,24 @@ import AnimationLayout from '../components/animation/AnimationLayout';
 import { motion } from 'framer-motion';
 import { childVariants } from '../utils/data/animation';
 import { links } from '../utils/data/links';
+import FlowerTwo from '../components/svgs/FlowerTwo';
 
 const Home = () => {
     return (
-        <div id="home" className={`${styles.page} pt-0`}>
+        <div
+            id="home"
+            className={`${styles.page} pt-4 overflow-hidden relative min-h-screen`}>
+            <FlowerTwo
+                width="w-20"
+                fill="fill-blue"
+                className="top-[-12vh] right-[-5vw] absolute w-80 opacity-30 animate-zoom-bounce"
+            />
+
+            <FlowerTwo
+                width="w-20"
+                fill="fill-yellow"
+                className="bottom-0 left-[-5vw] absolute w-80 opacity-30 animate-zoom-bounce"
+            />
             <AnimationLayout className="flex flex-col justify-center items-center min-h-screen">
                 <motion.p
                     variants={childVariants}
