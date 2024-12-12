@@ -1,11 +1,30 @@
+import { useEffect, useState } from 'react';
 import { styles } from '../utils/css/styles';
 import { links } from '../utils/data/links';
 import DiagonalArrow from './svgs/DiagonalArrow';
 import Logo from './svgs/Logo';
 
 const NavigationBar = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 200) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        console.log(isScrolled);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
     return (
-        <div className="fixed top-0 left-0 w-full flex items-center justify-between p-4 bg-gradient-to-b from-[#121212] to-transparent backdrop-blur-md z-10">
+        <div
+            className={`fixed top-0 left-0 w-full flex items-center justify-between p-4 backdrop-blur-md transition-all duration-300 ease-in  ${
+                isScrolled ? 'backdrop-opacity-100' : 'backdrop-opacity-0'
+            } z-10`}>
             <div className="mx-8 flex-1">
                 <a href="#home">
                     <Logo width="w-16" />
