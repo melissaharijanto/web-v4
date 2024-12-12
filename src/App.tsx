@@ -8,13 +8,13 @@ import Projects from './pages/Projects';
 
 const App: React.FC = () => {
     return (
-        <>
+        <main className={'min-h-screen bg-black'}>
             <NavigationBar />
             <Home />
             <About />
             <Experience />
             <Projects />
-        </>
+        </main>
     );
 };
 
