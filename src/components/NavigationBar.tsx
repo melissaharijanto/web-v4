@@ -17,7 +17,6 @@ const NavigationBar = () => {
         };
 
         window.addEventListener('scroll', handleScroll);
-        console.log(isScrolled);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
     return (
