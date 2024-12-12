@@ -17,7 +17,7 @@ const RightArrow = ({
                 <clipPath id="aeffebe9a7">
                     <path
                         d="M 1348 336 L 2249.5 336 L 2249.5 1237 L 1348 1237 Z M 1348 336 "
-                        clip-rule="nonzero"
+                        clipRule="nonzero"
                     />
                 </clipPath>
                 <clipPath id="c2b52176da">
@@ -29,19 +29,19 @@ const RightArrow = ({
                 <clipPath id="1adbfc1823">
                     <path
                         d="M 80.007812 1044.980469 L 2169.980469 1044.980469 L 2169.980469 1204.007812 L 80.007812 1204.007812 Z M 80.007812 1044.980469 "
-                        clip-rule="nonzero"
+                        clipRule="nonzero"
                     />
                 </clipPath>
                 <clipPath id="3535de0edb">
                     <path
                         d="M 1349 1012 L 2249.5 1012 L 2249.5 1913 L 1349 1913 Z M 1349 1012 "
-                        clip-rule="nonzero"
+                        clipRule="nonzero"
                     />
                 </clipPath>
                 <clipPath id="b5af241e32">
                     <path
                         d="M 2249.492188 1124.5 L 1461.433594 1912.558594 L 1348.984375 1800.105469 L 2137.039062 1012.050781 Z M 2249.492188 1124.5 "
-                        clip-rule="nonzero"
+                        clipRule="nonzero"
                     />
                 </clipPath>
             </defs>
@@ -50,8 +50,8 @@ const RightArrow = ({
                     <path
                         className={fill}
                         d="M 1461.4375 336.445312 L 2249.46875 1124.472656 L 2137.019531 1236.921875 L 1348.988281 448.894531 Z M 1461.4375 336.445312 "
-                        fill-opacity="1"
-                        fill-rule="nonzero"
+                        fillOpacity="1"
+                        fillRule="nonzero"
                     />
                 </g>
             </g>
@@ -59,8 +59,8 @@ const RightArrow = ({
                 <path
                     className={fill}
                     d="M 2169.980469 1204.007812 L 80.246094 1204.007812 L 80.246094 1044.980469 L 2169.980469 1044.980469 Z M 2169.980469 1204.007812 "
-                    fill-opacity="1"
-                    fill-rule="nonzero"
+                    fillOpacity="1"
+                    fillRule="nonzero"
                 />
             </g>
             <g clip-path="url(#3535de0edb)">
@@ -68,8 +68,8 @@ const RightArrow = ({
                     <path
                         className={fill}
                         d="M 2249.492188 1124.5 L 1461.460938 1912.527344 L 1349.011719 1800.078125 L 2137.039062 1012.050781 Z M 2249.492188 1124.5 "
-                        fill-opacity="1"
-                        fill-rule="nonzero"
+                        fillOpacity="1"
+                        fillRule="nonzero"
                     />
                 </g>
             </g>
