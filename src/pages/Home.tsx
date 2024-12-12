@@ -1,8 +1,9 @@
 import Flower from '../components/svgs/Flower';
 import { styles } from '../utils/css/styles';
 import RightArrow from '../components/svgs/RightArrow';
-import AnimationLayout, { childVariants } from '../components/AnimationLayout';
+import AnimationLayout from '../components/animation/AnimationLayout';
 import { motion } from 'framer-motion';
+import { childVariants } from '../utils/data/animation';
 
 const Home = () => {
     const navigateToLinkedin = () => {

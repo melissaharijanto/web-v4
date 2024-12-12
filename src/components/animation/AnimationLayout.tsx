@@ -1,27 +1,10 @@
 import { motion } from 'framer-motion';
-import { ReactNode, FC } from 'react';
+import { FC } from 'react';
+import { AnimationLayoutProps } from '../../utils/types/AnimationTypes';
 
 // TYPES
-interface ILayoutProps {
-    children: ReactNode;
-    className?: string | undefined;
-}
 
-export const childVariants = {
-    hidden: { x: '10vw', opacity: 0 },
-    visible: {
-        x: 0,
-        opacity: 1,
-        transition: { type: 'tween', duration: 1 },
-    },
-    exit: {
-        opacity: 0,
-        x: '-10vw',
-        transition: { type: 'tween', duration: 1 },
-    },
-};
-
-const AnimationLayout: FC<ILayoutProps> = ({ children, className }) => {
+const AnimationLayout: FC<AnimationLayoutProps> = ({ children, className }) => {
     const parentVariants = {
         hidden: {
             opacity: 0,

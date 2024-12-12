@@ -5,7 +5,8 @@ import { motion } from 'framer-motion';
 import SubheadingTitle from '../components/SubheadingTitle';
 import AboutLink from '../components/AboutLink';
 import { links } from '../utils/data/links';
-import AnimationLayout, { childVariants } from '../components/AnimationLayout';
+import AnimationLayout from '../components/animation/AnimationLayout';
+import { childVariants } from '../utils/data/animation';
 
 const About = () => {
     return (

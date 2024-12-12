@@ -1,8 +1,9 @@
-import AnimationLayout, { childVariants } from '../components/AnimationLayout';
+import AnimationLayout from '../components/animation/AnimationLayout';
 import ExperienceComponent from '../components/ExperienceComponent';
 import SubheadingTitle from '../components/SubheadingTitle';
 import DiagonalArrow from '../components/svgs/DiagonalArrow';
 import { styles } from '../utils/css/styles';
+import { childVariants } from '../utils/data/animation';
 import { experiences } from '../utils/data/experience';
 import { links } from '../utils/data/links';
 import { motion } from 'framer-motion';
