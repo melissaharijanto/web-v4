@@ -1,5 +1,5 @@
 export const styles = {
-    'page': 'min-h-screen bg-black w-full p-20',
+    'page': ' bg-black w-full p-20',
     'header-sm': 'text-white font-shippori text-2xl',
     'header-md': 'text-white font-shippori text-4xl',
     'header-md-no-color': 'font-shippori text-4xl',
