@@ -10,11 +10,11 @@ const SubheadingTitle = ({
 }) => {
     return (
         <div>
-            <div className="flex justify-between items-center gap-x-2 px-2 py-2 border-white border-[1px] w-fit rounded-full">
-                <div className="bg-black rounded-full p-2">
-                    <Flower width="w-4" fill={flowerFill} />
+            <div className="flex justify-start items-center gap-x-2 rounded-full">
+                <div className="bg-black rounded-full p-4 animate-spin-slower">
+                    <Flower width="w-20" fill={flowerFill} />
                 </div>
-                <span className={`${styles['header-sm']} mb-1 mr-3`}>
+                <span className={`${styles['header-lg']} mb-1 mr-3`}>
                     {title}
                 </span>
             </div>
