@@ -4,12 +4,9 @@ import RightArrow from '../components/svgs/RightArrow';
 import AnimationLayout from '../components/animation/AnimationLayout';
 import { motion } from 'framer-motion';
 import { childVariants } from '../utils/data/animation';
+import { links } from '../utils/data/links';
 
 const Home = () => {
-    const navigateToLinkedin = () => {
-        window.open('https://linkedin.com/in/melissaharijanto', '_blank');
-    };
-
     return (
         <div id="home" className={`${styles.page} pt-0`}>
             <AnimationLayout className="flex flex-col justify-center items-center min-h-screen">
@@ -52,14 +49,14 @@ const Home = () => {
                 <motion.div
                     variants={childVariants}
                     className="flex gap-x-4 mt-8">
-                    <button
-                        onClick={navigateToLinkedin}
+                    <a
+                        href={links.linkedin}
                         className={`${styles['button-text-black']} ${styles['blue-button']} ${styles['button-with-right-arrow']}`}>
                         LinkedIn Profile &nbsp;
                         <div className="bg-black rounded-full p-2">
                             <RightArrow width="w-4" fill="fill-white" />
                         </div>
-                    </button>
+                    </a>
                 </motion.div>
             </AnimationLayout>
         </div>
