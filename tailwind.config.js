@@ -5,6 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        "zoomBounce": {
+          '0%': { transform: 'scale(0.6)' },
+          '50%': { transform: 'scale(1.2)' }, // Zoom in
+          '70%': { transform: 'scale(0.9)' },  // Zoom out a bit
+          '100%': { transform: 'scale(1)' },   // Back to normal
+        },
+      },
       fontFamily: {
         shippori: ["Shippori Antique B1", "sans-serif"],
         manrope: ["Manrope", "sans-serif"]
@@ -22,6 +30,8 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 4s linear infinite',
+        'spin-slower': 'spin 16s linear infinite',
+        'zoom-bounce': 'zoomBounce 1.5s ease-out', // Animation that lasts 1 second
       }
     },
   },
