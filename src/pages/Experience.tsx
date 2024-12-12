@@ -64,6 +64,7 @@ const Experience = () => {
                     {experiences.map((exp, index) => {
                         return (
                             <ExperienceComponent
+                                key={`${exp.company} ${exp.period}`}
                                 index={index}
                                 textColor={exp.textColor}
                                 company={exp.company}

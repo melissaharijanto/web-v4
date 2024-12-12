@@ -34,7 +34,9 @@ const ExperienceComponent = ({
                     </div>
                     {links?.map((link: Link) => {
                         return (
-                            <div className="group relative inline-block">
+                            <div
+                                className="group relative inline-block"
+                                key={link.label}>
                                 <a
                                     href={link.url}
                                     target="_blank"
@@ -55,9 +57,13 @@ const ExperienceComponent = ({
                     <ul className="list-disc">
                         {description.map((desc, idx) => {
                             if (idx == 0) {
-                                return <li>{desc}</li>;
+                                return <li key={idx}>{desc}</li>;
                             } else {
-                                return <li className="mt-1">{desc}</li>;
+                                return (
+                                    <li className="mt-1" key={idx}>
+                                        {desc}
+                                    </li>
+                                );
                             }
                         })}
                     </ul>
