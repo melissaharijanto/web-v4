@@ -33,10 +33,11 @@ const About = () => {
                         <div className="flex-col flex">
                             <div className="flex flex-col items-start">
                                 <p className="text-white font-manrope text-justify">
-                                    Hi, I’m Melissa, a software engineer
-                                    passionate about turning creative ideas into
-                                    functional and engaging digital experiences.
-                                    I focus on{' '}
+                                    Hi, I’m Melissa, a final-year Computer
+                                    Science undergraduate based in Singapore,
+                                    and an aspiring software engineer passionate
+                                    about turning creative ideas into functional
+                                    and engaging digital experiences. I focus on{' '}
                                     <span className="text-yellow font-semibold">
                                         full-stack and front-end development
                                     </span>
