@@ -16,7 +16,7 @@ const ExperienceComponent = ({
     links,
 }: ExperienceComponentInterface) => {
     return (
-        <div className={`w-[60vw] max-w-[60vw] ${index != 0 ? 'mt-6' : ''}`}>
+        <div className={`${index != 0 ? 'mt-6' : ''}`}>
             <div className="flex justify-between gap-x-16">
                 <div className="text-left text-white flex flex-col justify-between">
                     <div className="inline-flex flex-col gap-y-1">
@@ -51,7 +51,7 @@ const ExperienceComponent = ({
                         );
                     })}
                 </div>
-                <div className="max-w-[50%] text-justify text-white font-manrope text-sm">
+                <div className="max-w-[50%] text-justify text-white font-manrope">
                     <ul className="list-disc">
                         {description.map((desc, idx) => {
                             if (idx == 0) {
