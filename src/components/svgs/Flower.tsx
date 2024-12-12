@@ -1,7 +1,15 @@
-const Flower = ({ fill, width }: { fill: string; width: string }) => {
+const Flower = ({
+    fill,
+    width,
+    className,
+}: {
+    fill: string;
+    width: string;
+    className?: string | undefined;
+}) => {
     return (
         <svg
-            className={`${width}`}
+            className={`${width} ${className}`}
             xmlns="http://www.w3.org/2000/svg"
             zoomAndPan="magnify"
             viewBox="0 0 2250 2250.000011"
