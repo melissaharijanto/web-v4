@@ -40,7 +40,7 @@ const Home = () => {
                         </div>
                         <div className="w-full flex justify-between items-center gap-x-4">
                             <div>SOFTWARE</div>
-                            <div className="animate-spin-slow flex justify-center items-center">
+                            <div className="animate-spin-slow flex justify-center items-center mt-4">
                                 <Flower fill="fill-red" width="w-16"></Flower>
                             </div>
                             <div>ENGINEER</div>
