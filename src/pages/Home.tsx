@@ -1,11 +1,11 @@
 import Flower from '../components/svgs/Flower';
 import { styles } from '../utils/css/styles';
-import RightArrow from '../components/svgs/RightArrow';
 import AnimationLayout from '../components/animation/AnimationLayout';
 import { motion } from 'framer-motion';
 import { childVariants } from '../utils/data/animation';
 import { links } from '../utils/data/links';
 import FlowerTwo from '../components/svgs/FlowerTwo';
+import ButtonWithRightArrow from '../components/ButtonWithRightArrow';
 
 const Home = () => {
     return (
@@ -63,14 +63,11 @@ const Home = () => {
                 <motion.div
                     variants={childVariants}
                     className="flex gap-x-4 mt-8">
-                    <a
-                        href={links.linkedin}
-                        className={`${styles['button-text-black']} ${styles['blue-button']} ${styles['button-with-right-arrow']}`}>
-                        LinkedIn Profile &nbsp;
-                        <div className="bg-black rounded-full p-2">
-                            <RightArrow width="w-4" fill="fill-white" />
-                        </div>
-                    </a>
+                    <ButtonWithRightArrow
+                        link={links.linkedin}
+                        label={`LinkedIn Profile`}
+                        className={`${styles['blue-button']}`}
+                    />
                 </motion.div>
             </AnimationLayout>
         </div>
