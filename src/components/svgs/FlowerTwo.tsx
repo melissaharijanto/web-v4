@@ -1,12 +1,7 @@
-const FlowerTwo = ({
-    width,
-    fill,
-    className,
-}: {
-    width: string;
-    fill: string;
-    className?: string | undefined;
-}) => {
+import React from 'react';
+import { SvgType } from '../../utils/types/SvgTypes';
+
+const FlowerTwo: React.FC<SvgType> = ({ width, fill, className }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

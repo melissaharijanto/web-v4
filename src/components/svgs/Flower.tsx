@@ -1,12 +1,7 @@
-const Flower = ({
-    fill,
-    width,
-    className,
-}: {
-    fill: string;
-    width: string;
-    className?: string | undefined;
-}) => {
+import React from 'react';
+import { SvgType } from '../../utils/types/SvgTypes';
+
+const Flower: React.FC<SvgType> = ({ fill, width, className }) => {
     return (
         <svg
             className={`${width} ${className}`}

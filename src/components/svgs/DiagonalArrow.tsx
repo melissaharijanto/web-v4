@@ -1,14 +1,15 @@
-const DiagonalArrow = ({
+import React from 'react';
+import { SvgType } from '../../utils/types/SvgTypes';
+
+const DiagonalArrow: React.FC<SvgType> = ({
     fill = 'fill-[#FFFFFFF]',
     width,
-}: {
-    fill?: string;
-    width: string;
+    className,
 }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            className={`${width}`}
+            className={`${width} ${className}`}
             zoomAndPan="magnify"
             viewBox="0 0 2250 2250.000011"
             preserveAspectRatio="xMidYMid meet"

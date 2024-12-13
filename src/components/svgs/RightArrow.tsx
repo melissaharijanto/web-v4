@@ -1,14 +1,11 @@
-const RightArrow = ({
-    fill = 'fill-[#FFFFFFF]',
-    width,
-}: {
-    fill?: string;
-    width: string;
-}) => {
+import React from 'react';
+import { SvgType } from '../../utils/types/SvgTypes';
+
+const RightArrow: React.FC<SvgType> = ({ width, fill, className }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            className={width}
+            className={`${width} ${className}`}
             zoomAndPan="magnify"
             viewBox="0 0 2250 2250.000011"
             preserveAspectRatio="xMidYMid meet"
