@@ -22,5 +22,7 @@ export const styles = {
     'exp-link': 'text-white font-manrope font-semibold text-sm hover:font-bold transition-all ease-in relative inline-block group',
     'exp-position': 'text-white font-manrope font-semibold text-lg',
     'exp-period': 'text-white font-manrope font-semibold text-md',
-    'mini-subheader': 'font-bold text-md font-shippori text-yellow tracking-widest'
+    'mini-subheader': 'font-bold text-md font-shippori text-yellow tracking-widest',
+    'project-container': 'border-[1px] border-white rounded-xl py-4 px-8',
+    'paragraph-text': "text-white font-manrope text-justify",
 }
