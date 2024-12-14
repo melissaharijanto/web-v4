@@ -26,17 +26,17 @@ const Experience = () => {
                 <div className="flex flex-col items-center justify-center">
                     <motion.div
                         variants={childVariantsTwo}
-                        className="grid grid-cols-[6fr_4fr] gap-x-6 mt-4">
-                        <div className={`${styles['header-xl']} text-right`}>
+                        className="grid grid-cols-[6fr_4fr] gap-x-4 mt-4">
+                        <div className={`${styles['header-lg']} text-right`}>
                             PLACES I'VE
                         </div>
-                        <div className="mt-4 flex justify-start items-center">
-                            <Asterisk fill="fill-red" width="w-20" />
+                        <div className="mt-2 flex justify-start items-center">
+                            <Asterisk fill="fill-red" width="w-12" />
                         </div>
                     </motion.div>
                     <motion.div
                         variants={childVariants}
-                        className="grid grid-cols-[4fr_5.5fr] mt-2 gap-x-6">
+                        className="grid grid-cols-[4fr_5.5fr] mt-2 gap-x-4">
                         <div className="flex flex-col justify-center items-end">
                             <a
                                 href={links.resume}
@@ -49,7 +49,7 @@ const Experience = () => {
                             </a>
                         </div>
 
-                        <div className={`${styles['header-xl']} text-left`}>
+                        <div className={`${styles['header-lg']} text-left`}>
                             <p>WORKED AT</p>
                         </div>
                     </motion.div>
