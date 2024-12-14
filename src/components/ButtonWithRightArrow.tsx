@@ -11,6 +11,7 @@ const ButtonWithRightArrow: React.FC<ButtonProps> = ({
     return (
         <a
             href={link}
+            target="_blank"
             className={`${styles['button-text-black']}  w-fit ${
                 className ? className : 'bg-white rounded-full'
             } ${styles['button-with-right-arrow']}`}>
