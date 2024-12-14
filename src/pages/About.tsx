@@ -15,7 +15,7 @@ import {
 const About = () => {
     return (
         <div
-            className={`${styles.page} pt-4 flex justify-center items-center`}
+            className={`${styles.page} mt-4 flex justify-center items-center`}
             id="about">
             <AnimationLayout className="flex flex-col justify-center items-start bg-black">
                 <motion.div
