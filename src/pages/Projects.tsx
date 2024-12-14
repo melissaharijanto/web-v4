@@ -5,14 +5,14 @@ import { childVariants, childVariantsTwo } from '../utils/data/animation';
 import SpinningTextRing from '../components/SpinningTextRing';
 import BentoGrid from '../components/projects/BentoGrid';
 import { projects } from '../utils/data/projects';
+import React from 'react';
 
-const Projects = () => {
+const Projects: React.FC = () => {
     return (
         <div
             id="projects"
             className={`${styles.page} flex justify-center items-center flex-col pt-20 mt-8`}>
             <AnimationLayout className="flex flex-col justify-center items-center min-h-screen">
-                {/* <SubheadingTitle title="PROJECTS" flowerFill="fill-yellow" /> */}
                 <motion.div
                     variants={childVariants}
                     className="flex justify-start w-full items-center gap-x-4">
