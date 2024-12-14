@@ -3,7 +3,7 @@ import {
     ExperienceComponentInterface,
     Link,
 } from '../utils/types/ExperienceInterface';
-import DiagonalArrow from './svgs/DiagonalArrow';
+import SmallLink from './SmallLink';
 
 const ExperienceComponent = ({
     textColor,
@@ -32,26 +32,13 @@ const ExperienceComponent = ({
                             {period.toUpperCase()}
                         </p>
                     </div>
-                    {links?.map((link: Link) => {
-                        return (
-                            <div
-                                className="group relative inline-block"
-                                key={link.label}>
-                                <a
-                                    href={link.url}
-                                    target="_blank"
-                                    className={`inline-flex justify-center relative items-center ${styles['exp-link']} gap-x-1 hover:font-bold transition-all ease-in`}>
-                                    {link.label}
-                                    <span
-                                        className={`${styles['navbar-underline']}`}></span>
-                                    <DiagonalArrow
-                                        fill="fill-white"
-                                        width="w-3"
-                                    />
-                                </a>
-                            </div>
-                        );
-                    })}
+                    <div className="flex gap-x-4">
+                        {links?.map((link: Link) => {
+                            return (
+                                <SmallLink link={link.url} label={link.label} />
+                            );
+                        })}
+                    </div>
                 </div>
                 <div className="max-w-[50%] text-justify text-white font-manrope">
                     <ul className="list-disc">
