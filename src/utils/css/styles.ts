@@ -4,6 +4,7 @@ export const styles = {
     'header-sm-black': 'text-black font-shippori text-2xl',
     'header-md': 'text-white font-shippori text-4xl',
     'header-md-no-color': 'font-shippori text-4xl',
+    'header-btwn-mdlg':  'text-white font-shippori text-5xl',
     'header-lg': 'text-white font-shippori text-6xl',  
     'header-xl': 'text-white font-shippori text-8xl',  
     'subheading': 'text-white font-manrope text-xl font-semibold',

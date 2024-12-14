@@ -17,8 +17,9 @@ const BentoGrid = () => {
                     variants={childVariantsThree}
                     className="flex justify-between items-center">
                     <div
-                        className={`${styles['header-lg']} text-left !text-blue`}>
-                        <p>TRAVEL LOG</p>
+                        className={`${styles['header-btwn-mdlg']} text-left !text-blue`}>
+                        <p>TRAVEL</p>
+                        <p>LOG</p>
                     </div>
                     <div>
                         <a href="">
@@ -59,8 +60,11 @@ const BentoGrid = () => {
                 className={`${styles['project-container']} row-span-2`}>
                 <motion.div
                     variants={childVariantsThree}
-                    className={`${styles['header-lg']} text-left !text-yellow flex justify-between items-center`}>
-                    <p>PINUS STUDY</p>
+                    className={`${styles['header-btwn-mdlg']} text-left !text-yellow flex justify-between items-center`}>
+                    <div>
+                        <p>PINUS </p>
+                        <p>STUDY</p>
+                    </div>
                     <a href="">
                         <DiagonalArrow
                             width="w-16"
@@ -97,7 +101,7 @@ const BentoGrid = () => {
                 className={`${styles['project-container']} row-span-1 pb-8`}>
                 <motion.div
                     variants={childVariantsThree}
-                    className={`${styles['header-lg']} text-left !text-red flex justify-between items-center`}>
+                    className={`${styles['header-btwn-mdlg']} text-left !text-red flex justify-between items-center`}>
                     <div>
                         <p>CLASS-</p>
                         <p>ROOM 360</p>
@@ -131,7 +135,7 @@ const BentoGrid = () => {
                 className={`${styles['project-container']} row-span-2`}>
                 <motion.div
                     variants={childVariantsThree}
-                    className={`${styles['header-lg']} text-left !text-yellow flex justify-between items-center`}>
+                    className={`${styles['header-btwn-mdlg']} text-left !text-yellow flex justify-between items-center`}>
                     <div>
                         <p>TRACKO</p>
                         <p>(DESKTOP)</p>
@@ -169,7 +173,7 @@ const BentoGrid = () => {
                 className={`${styles['project-container']} row-span-1 pb-8`}>
                 <motion.div
                     variants={childVariantsThree}
-                    className={`${styles['header-lg']} text-left !text-red flex justify-between items-center`}>
+                    className={`${styles['header-btwn-mdlg']} text-left !text-red flex justify-between items-center`}>
                     <div>
                         <p>FEMIN-</p>
                         <p>NOVATE</p>
