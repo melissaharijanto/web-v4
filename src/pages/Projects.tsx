@@ -1,17 +1,8 @@
-import ButtonWithRightArrow from '../components/ButtonWithRightArrow';
-import DiagonalArrow from '../components/svgs/DiagonalArrow';
 import { styles } from '../utils/css/styles';
-import TravelLog from '../assets/travel-log.gif';
 import AnimationLayout from '../components/animation/AnimationLayout';
 import { motion } from 'framer-motion';
-import {
-    childVariants,
-    childVariantsThree,
-    childVariantsTwo,
-} from '../utils/data/animation';
-import ChatIcon from '../components/svgs/ChatIcon';
+import { childVariants, childVariantsTwo } from '../utils/data/animation';
 import SpinningTextRing from '../components/SpinningTextRing';
-import InventoryIcon from '../components/svgs/InventoryIcon';
 import BentoGrid from '../components/BentoGrid';
 
 const Projects = () => {
