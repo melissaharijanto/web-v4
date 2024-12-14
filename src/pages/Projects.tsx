@@ -3,7 +3,8 @@ import AnimationLayout from '../components/animation/AnimationLayout';
 import { motion } from 'framer-motion';
 import { childVariants, childVariantsTwo } from '../utils/data/animation';
 import SpinningTextRing from '../components/SpinningTextRing';
-import BentoGrid from '../components/BentoGrid';
+import BentoGrid from '../components/projects/BentoGrid';
+import { projects } from '../utils/data/projects';
 
 const Projects = () => {
     return (
@@ -23,7 +24,7 @@ const Projects = () => {
                 <motion.div variants={childVariantsTwo} className="w-full">
                     <hr className="w-full mt-8"></hr>
                 </motion.div>
-                <BentoGrid />
+                <BentoGrid projects={projects} />
             </AnimationLayout>
         </div>
     );
