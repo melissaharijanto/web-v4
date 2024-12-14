@@ -17,7 +17,7 @@ const Experience = () => {
     return (
         <div
             id="experience"
-            className={`${styles.page} flex justify-center items-start pb-16 mt-28`}>
+            className={`${styles.page} flex justify-center items-start pb-16 pt-20 mt-8`}>
             <AnimationLayout className="flex flex-col justify-center items-center">
                 <motion.div variants={childVariantsFour}>
                     <p className={`${styles['mini-subheader']}`}>
