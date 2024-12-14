@@ -5,7 +5,6 @@ import DiagonalArrow from '../components/svgs/DiagonalArrow';
 import { styles } from '../utils/css/styles';
 import {
     childVariants,
-    childVariantsFour,
     childVariantsThree,
     childVariantsTwo,
 } from '../utils/data/animation';
@@ -19,7 +18,7 @@ const Experience = () => {
             id="experience"
             className={`${styles.page} flex justify-center items-start pb-16 pt-20 mt-8`}>
             <AnimationLayout className="flex flex-col justify-center items-center">
-                <motion.div variants={childVariantsFour}>
+                <motion.div variants={childVariants}>
                     <p className={`${styles['mini-subheader']}`}>
                         {'{ MY WORK EXPERIENCE }'}
                     </p>
