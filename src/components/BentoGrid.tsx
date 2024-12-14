@@ -54,8 +54,11 @@ const BentoGrid = () => {
                 </motion.div>
             </motion.div>
 
-            <div className={`${styles['project-container']} row-span-2`}>
-                <div
+            <motion.div
+                variants={childVariantsThree}
+                className={`${styles['project-container']} row-span-2`}>
+                <motion.div
+                    variants={childVariantsThree}
                     className={`${styles['header-lg']} text-left !text-yellow flex justify-between items-center`}>
                     <p>PINUS STUDY</p>
                     <a href="">
@@ -64,8 +67,10 @@ const BentoGrid = () => {
                             fill="fill-white group-hover:fill-blue transition-all ease-in"
                             className="group "></DiagonalArrow>
                     </a>
-                </div>
-                <div className="mt-4 grid grid-cols-[3fr_7fr] gap-x-8 place-items-center">
+                </motion.div>
+                <motion.div
+                    variants={childVariantsThree}
+                    className="mt-4 grid grid-cols-[3fr_7fr] gap-x-8 place-items-center">
                     <div>
                         <ChatIcon width="w-full" fill="fill-blue" />
                     </div>
@@ -85,12 +90,13 @@ const BentoGrid = () => {
                             />
                         </div>
                     </div>
-                </div>
-
-                <p></p>
-            </div>
-            <div className={`${styles['project-container']} row-span-1 pb-8`}>
-                <div
+                </motion.div>
+            </motion.div>
+            <motion.div
+                variants={childVariantsThree}
+                className={`${styles['project-container']} row-span-1 pb-8`}>
+                <motion.div
+                    variants={childVariantsThree}
                     className={`${styles['header-lg']} text-left !text-red flex justify-between items-center`}>
                     <div>
                         <p>CLASS-</p>
@@ -102,26 +108,29 @@ const BentoGrid = () => {
                             fill="fill-white group-hover:fill-yellow transition-all ease-in"
                             className="group "></DiagonalArrow>
                     </a>
-                </div>
-                <div className="mt-4">
+                </motion.div>
+                <motion.div variants={childVariantsThree} className="mt-4">
                     <p className={`${styles['paragraph-text']}`}>
                         Top 15 Finalist for LifeHack 2023, a hackathon run by
                         NUS Computing Club. Tackling an EdTech-related prompt,
                         we built a 3D virtual classroom with React360.
                         Contributed to the UI development.
                     </p>
-                </div>
-                <div className="mt-4">
+                </motion.div>
+                <motion.div variants={childVariantsThree} className="mt-4">
                     <ButtonWithRightArrow
                         label="View Repository"
                         className={styles['blue-button']}
                         link=""
                     />
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
 
-            <div className={`${styles['project-container']} row-span-2`}>
-                <div
+            <motion.div
+                variants={childVariantsThree}
+                className={`${styles['project-container']} row-span-2`}>
+                <motion.div
+                    variants={childVariantsThree}
                     className={`${styles['header-lg']} text-left !text-yellow flex justify-between items-center`}>
                     <div>
                         <p>TRACKO</p>
@@ -133,8 +142,10 @@ const BentoGrid = () => {
                             fill="fill-white group-hover:fill-blue transition-all ease-in"
                             className="group "></DiagonalArrow>
                     </a>
-                </div>
-                <div className="mt-4 grid grid-cols-[6fr_4fr] gap-x-8 place-items-center">
+                </motion.div>
+                <motion.div
+                    variants={childVariantsThree}
+                    className="mt-4 grid grid-cols-[6fr_4fr] gap-x-8 place-items-center">
                     <div>
                         <p className={styles['paragraph-text']}>
                             Desktop application for order and inventory tracking
@@ -151,12 +162,13 @@ const BentoGrid = () => {
                         </div>
                     </div>
                     <InventoryIcon width="w-full" fill="fill-blue" />
-                </div>
-
-                <div></div>
-            </div>
-            <div className={`${styles['project-container']} row-span-1 pb-8`}>
-                <div
+                </motion.div>
+            </motion.div>
+            <motion.div
+                variants={childVariantsThree}
+                className={`${styles['project-container']} row-span-1 pb-8`}>
+                <motion.div
+                    variants={childVariantsThree}
                     className={`${styles['header-lg']} text-left !text-red flex justify-between items-center`}>
                     <div>
                         <p>FEMIN-</p>
@@ -168,8 +180,8 @@ const BentoGrid = () => {
                             fill="fill-white group-hover:fill-yellow transition-all ease-in"
                             className="group "></DiagonalArrow>
                     </a>
-                </div>
-                <div className="mt-4">
+                </motion.div>
+                <motion.div variants={childVariantsThree} className="mt-4">
                     <p className={styles['paragraph-text']}>
                         {' '}
                         Top 6 Finalist for TCS Sustainathon 2023. A job portal
@@ -177,15 +189,15 @@ const BentoGrid = () => {
                         in STEM. Contributed to the UI/UX design and front-end
                         implementation.
                     </p>
-                </div>
-                <div className="mt-4">
+                </motion.div>
+                <motion.div variants={childVariantsThree} className="mt-4">
                     <ButtonWithRightArrow
                         label="View Repository"
                         className={styles['blue-button']}
                         link=""
                     />
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </div>
     );
 };
