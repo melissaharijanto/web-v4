@@ -9,7 +9,7 @@ const Projects = () => {
     return (
         <div
             id="projects"
-            className={`${styles.page} flex justify-center items-center flex-col pt-24 mt-8`}>
+            className={`${styles.page} flex justify-center items-center flex-col pt-20 mt-8`}>
             <AnimationLayout className="flex flex-col justify-center items-center min-h-screen">
                 {/* <SubheadingTitle title="PROJECTS" flowerFill="fill-yellow" /> */}
                 <motion.div
