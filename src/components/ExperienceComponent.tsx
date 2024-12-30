@@ -17,7 +17,7 @@ const ExperienceComponent = ({
 }: ExperienceComponentInterface) => {
     return (
         <div className={`${index != 0 ? 'mt-6' : ''}`}>
-            <div className="flex justify-between gap-x-16">
+            <div className="flex lg:flex-row flex-col justify-between gap-x-16">
                 <div className="text-left text-white flex flex-col justify-between">
                     <div className="inline-flex flex-col gap-y-1">
                         <p
@@ -40,7 +40,7 @@ const ExperienceComponent = ({
                         })}
                     </div>
                 </div>
-                <div className="max-w-[50%] text-justify text-white font-manrope">
+                <div className="w-full mt-4 lg:mt-0 lg:max-w-[50%] text-justify text-white font-manrope">
                     <ul className="list-disc">
                         {description.map((desc, idx) => {
                             if (idx == 0) {
