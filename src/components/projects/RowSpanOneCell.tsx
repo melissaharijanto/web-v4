@@ -11,7 +11,7 @@ const RowSpanOneCell: React.FC<{
     return (
         <motion.div
             variants={childVariantsThree}
-            className={`${styles['project-container']} row-span-1 pb-8`}>
+            className={`${styles['project-container']} row-span-1 pb-6`}>
             <motion.div
                 variants={childVariantsThree}
                 className={`${styles['header-btwn-mdlg']} text-left !text-red flex justify-between items-center`}>
