@@ -29,7 +29,7 @@ const NavigationBar = () => {
                         ? 'backdrop-opacity-100 bg-black/60'
                         : 'backdrop-opacity-0'
                 } z-10`}>
-                <div className="md:mx-8 md:ml-0 ml-2 md:flex-1">
+                <div className="md:mx-8 ml-2 md:flex-1">
                     <a href="#home">
                         <Logo width="w-16" />
                     </a>
