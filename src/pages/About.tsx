@@ -28,9 +28,9 @@ const About = () => {
                 </motion.div>
                 <motion.div
                     variants={childVariantsThree}
-                    className=" mt-8 w-full flex justify-center ">
-                    <div className="w-[90%] flex justify-center gap-x-8">
-                        <div className="flex-col flex">
+                    className="mt-4 lg:mt-8 w-full flex justify-center ">
+                    <div className="w-full lg:w-[90%] flex lg:flex-row flex-col lg:text-base text-sm justify-center gap-x-8">
+                        <div className="flex-col flex lg:px-0 px-2">
                             <div className="flex flex-col items-start">
                                 <p className="text-white font-manrope text-justify">
                                     Hi, I’m Melissa, a final-year Computer
@@ -112,31 +112,33 @@ const About = () => {
                                 </a>
                             </div>
                         </div>
-                        <div className="flex justify-center items-center">
+                        <div className="hidden lg:flex justify-center items-center">
                             <div className="w-[0.5px] bg-white min-h-full py-4"></div>
                         </div>
                         <div>
-                            <div className="flex flex-col items-start gap-y-4">
+                            <div className="flex flex-col items-center lg:items-start gap-y-4 pt-8 lg:pt-0">
                                 <p className={`${styles.subheading} text-left`}>
                                     Other ways to{' '}
                                     <span className="text-yellow">connect</span>{' '}
                                     with me:
                                 </p>
-                                <AboutLink
-                                    url={links.github}
-                                    Icon={GitHub}
-                                    label="GITHUB"
-                                />
-                                <AboutLink
-                                    url={links.linkedin}
-                                    Icon={LinkedIn}
-                                    label="LINKEDIN"
-                                />
-                                <AboutLink
-                                    url={links.resume}
-                                    Icon={Description}
-                                    label="RESUME"
-                                />
+                                <div className="flex flex-row gap-x-4 lg:flex-col lg: items-start lg:gap-y-4">
+                                    <AboutLink
+                                        url={links.github}
+                                        Icon={GitHub}
+                                        label="GITHUB"
+                                    />
+                                    <AboutLink
+                                        url={links.linkedin}
+                                        Icon={LinkedIn}
+                                        label="LINKEDIN"
+                                    />
+                                    <AboutLink
+                                        url={links.resume}
+                                        Icon={Description}
+                                        label="RESUME"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -16,8 +16,13 @@ const AboutLink = ({
             <a
                 href={url}
                 target="_blank"
-                className={`flex justify-center items-center ${styles['header-sm']} gap-x-2 hover:font-bold transition-all ease-in`}>
-                <Icon fontSize="large" className="text-white" />
+                className={`flex justify-center items-center ${styles['header-sm']} lg:!text-2xl !text-lg gap-x-2 hover:font-bold transition-all ease-in`}>
+                <div className="lg:flex hidden">
+                    <Icon fontSize="large" className="text-white" />
+                </div>
+                <div className="lg:hidden flex">
+                    <Icon fontSize="medium" className="text-white" />
+                </div>
                 {label}
                 <DiagonalArrow fill="fill-white" width="w-4" />
             </a>
