@@ -13,17 +13,17 @@ const Home = () => {
             id="home"
             className={`${styles.page} pt-4 overflow-hidden relative min-h-screen`}>
             <FlowerTwo
-                width="w-20"
+                width="w-64"
                 fill="fill-blue"
-                className="top-[-12vh] right-[-5vw] absolute w-80 opacity-30 animate-zoom-bounce"
+                className="top-[-6vh] md:top-[-12vh] right-[-15vw] md:right-[-5vw] absolute md:w-80 opacity-30 animate-zoom-bounce"
             />
 
             <FlowerTwo
-                width="w-20"
+                width="w-64"
                 fill="fill-yellow"
-                className="bottom-0 left-[-5vw] absolute w-80 opacity-30 animate-zoom-bounce"
+                className="bottom-0 left-[-8vw] left-[-15vw] md:left-[-10vw] lg:left-[-5vw] absolute md:w-80 opacity-30 animate-zoom-bounce"
             />
-            <AnimationLayout className="flex flex-col justify-center items-center min-h-screen">
+            <AnimationLayout className="w-full flex flex-col justify-center items-center min-h-screen">
                 <motion.p
                     variants={childVariants}
                     className={`${styles['header-sm']} mb-2`}>
@@ -32,18 +32,24 @@ const Home = () => {
                 <div className={`${styles['header-xl']}`}>
                     <motion.div
                         variants={childVariants}
-                        className="w-max flex flex-col justify-center items-center">
-                        <div className="w-full flex justify-between items-center">
+                        className="w-full flex flex-col justify-center items-center">
+                        <div className="w-full flex justify-center md:!text-white text-red md:justify-between items-center">
                             <div>MELISSA</div>
-                            <div>A.</div>
-                            <div>HARIJANTO</div>
+                            <div className="md:flex hidden">A.</div>
+                            <div className="md:flex hidden">HARIJANTO</div>
                         </div>
-                        <div className="w-full flex justify-between items-center gap-x-4">
+                        <div className="w-full md:flex justify-between items-center gap-x-4 hidden">
                             <div>SOFTWARE</div>
-                            <div className="animate-spin-slow flex justify-center items-center mt-4">
-                                <Flower fill="fill-red" width="w-16"></Flower>
+                            <div className="animate-spin-slow flex justify-center items-center mt-3 lg:mt-4">
+                                <Flower
+                                    fill="fill-red"
+                                    width="md:w-10 lg:w-16"></Flower>
                             </div>
                             <div>ENGINEER</div>
+                        </div>
+                        <div
+                            className={`w-full flex justify-center items-center gap-x-4 md:hidden ${styles['header-sm']} !text-2xl`}>
+                            <p>SOFTWARE ENGINEER</p>
                         </div>
                     </motion.div>
                 </div>

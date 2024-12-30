@@ -12,9 +12,9 @@ export const projects : ProjectProps = {
     two: {
         name: ["Pinus", "Study"],
         arrowLink: "https://pinusstudy.com",
-        content: "Study forum for Indonesian students in NUS, built with React Typescript and Go.\
-                Contributed to Figma prototype and UI/UX, frontend development, backend integration,\
-                and spotting documentation discrepancies to implementation.",
+        content: "Educational forum built with React Typescript and Go.\
+                Contributed to UI/UX in Figma, frontend development, backend integration,\
+                & documentation QA.",
         buttonLink: "https://github.com/PINUSTECH-2022/pinus-study-frontend",
     },
     three: {
@@ -27,7 +27,7 @@ export const projects : ProjectProps = {
         buttonLink: "https://github.com/melissaharijanto/pink-unicorn",
     },
     four: {
-        name: ["TrackO", "(Desktop)"],
+        name: ["TrackO", "(PC)"],
         arrowLink: "https://github.com/AY2223S1-CS2103T-W15-3/tp/releases/tag/v1.4",
         content: "Desktop application for order and inventory tracking built with Java, JavaFX and Gradle. \
                 Contributed to the implementation of features and the UI (full contribution list here).",
