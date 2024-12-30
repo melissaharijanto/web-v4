@@ -31,7 +31,7 @@ const NavigationBar = () => {
                 } z-10`}>
                 <div className="md:mx-8 ml-2 md:flex-1">
                     <a href="#home">
-                        <Logo width="w-16" />
+                        <Logo width="w-12 md:w-16" />
                     </a>
                 </div>
                 <div className="md:flex hidden flex md:flex-1 gap-x-8 items-center justify-center">
