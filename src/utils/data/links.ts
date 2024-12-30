@@ -50,7 +50,7 @@ export const footerLinks = {
     three: [
         {
             label: "Old Portfolio Website",
-            link: ""
+            link: "https://melissaharijanto.github.io/web-v3"
         }, 
         {
             label: "Travel Log",
