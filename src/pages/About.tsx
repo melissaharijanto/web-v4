@@ -122,7 +122,7 @@ const About = () => {
                                     <span className="text-yellow">connect</span>{' '}
                                     with me:
                                 </p>
-                                <div className="flex flex-row gap-x-4 lg:flex-col lg: items-start lg:gap-y-4">
+                                <div className="flex flex-wrap justify-center flex-row gap-x-4 lg:flex-col lg:items-start lg:gap-y-4">
                                     <AboutLink
                                         url={links.github}
                                         Icon={GitHub}
