@@ -1,6 +1,6 @@
 export const styles = {
     'page': 'min-h-screen bg-black w-full px-4 lg:px-20 overflow-x-hidden',
-    'header-sm': 'text-white font-shippori text-2xl',
+    'header-sm': 'text-white font-shippori text-lg md:text-2xl',
     'header-sm-black': 'text-black font-shippori text-2xl',
     'header-md': 'text-white font-shippori text-4xl',
     'header-md-no-color': 'font-shippori text-4xl',

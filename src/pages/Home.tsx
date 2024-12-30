@@ -48,7 +48,7 @@ const Home = () => {
                             <div>ENGINEER</div>
                         </div>
                         <div
-                            className={`w-full flex justify-center items-center gap-x-4 md:hidden ${styles['header-sm']}`}>
+                            className={`w-full flex justify-center items-center gap-x-4 md:hidden ${styles['header-sm']} !text-2xl`}>
                             <p>SOFTWARE ENGINEER</p>
                         </div>
                     </motion.div>
