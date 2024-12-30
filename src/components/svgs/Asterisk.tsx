@@ -1,14 +1,16 @@
 const Asterisk = ({
     fill = 'fill-[#FFFFFFF]',
     width,
+    className,
 }: {
     fill?: string;
     width: string;
+    className?: string;
 }) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            className={`${width}`}
+            className={`${width} ${className}`}
             zoomAndPan="magnify"
             preserveAspectRatio="xMidYMid meet"
             viewBox="0 0 2250 2250.000011"
