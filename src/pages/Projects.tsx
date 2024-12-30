@@ -15,9 +15,10 @@ const Projects: React.FC = () => {
             <AnimationLayout className="flex flex-col justify-center items-center min-h-screen">
                 <motion.div
                     variants={childVariants}
-                    className="flex justify-start w-full items-center gap-x-4">
+                    className="flex flex-col justify-center lg:flex-row lg:justify-start w-full items-center gap-y-8 lg:gap-y-0 lg:gap-x-4">
                     <SpinningTextRing />
-                    <div className={`text-left ${styles['header-lg']}`}>
+                    <div
+                        className={`text-center lg:text-left ${styles['header-lg']}`}>
                         <p>SOFTWARE I'VE WORKED ON</p>
                     </div>
                 </motion.div>

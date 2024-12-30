@@ -40,7 +40,8 @@ const ExperienceComponent = ({
                         })}
                     </div>
                 </div>
-                <div className="w-full mt-4 lg:mt-0 lg:max-w-[50%] text-justify text-white font-manrope">
+                <div
+                    className={`w-full mt-4 lg:mt-0 lg:max-w-[50%] text-justify text-white ${styles['paragraph-text']}`}>
                     <ul className="list-disc">
                         {description.map((desc, idx) => {
                             if (idx == 0) {
