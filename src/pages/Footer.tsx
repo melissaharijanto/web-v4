@@ -33,12 +33,10 @@ const Footer = () => {
                             </p>
                             <a
                                 href={links.email}
-                                className="border-2 border-white rounded-full p-3 lg:p-4 group hover:border-yellow transition-all ease-in mt-3 hover:motion-safe:animate-pulse">
+                                className="border-2 rounded-full p-3 lg:p-4 group border-yellow transition-all ease-in mt-3 hover:motion-safe:animate-pulse">
                                 <DiagonalArrow
                                     width="w-6 lg:w-10"
-                                    fill={
-                                        'fill-white group-hover:fill-yellow transition-all ease-in'
-                                    }
+                                    fill={'fill-yellow transition-all ease-in'}
                                     className="group"
                                 />
                             </a>
