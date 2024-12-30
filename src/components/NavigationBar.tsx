@@ -21,7 +21,7 @@ const NavigationBar = () => {
     }, []);
     return (
         <div
-            className={`fixed top-0 left-0 w-full flex items-center justify-between px-4 py-2 backdrop-blur-lg transition-all duration-300 ease-in  ${
+            className={`lg:flex hidden fixed top-0 left-0 w-full items-center justify-between px-4 py-2 backdrop-blur-lg transition-all duration-300 ease-in  ${
                 isScrolled
                     ? 'backdrop-opacity-100 bg-black/60'
                     : 'backdrop-opacity-0'
