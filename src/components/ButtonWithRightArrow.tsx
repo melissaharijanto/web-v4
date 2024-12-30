@@ -14,7 +14,7 @@ const ButtonWithRightArrow: React.FC<ButtonProps> = ({
             target="_blank"
             className={`${styles['button-text-black']}  w-fit ${
                 className ? className : 'bg-white rounded-full'
-            } ${styles['button-with-right-arrow']}`}>
+            } ${styles['button-with-right-arrow']} lg:text-base text-sm`}>
             {label} &nbsp;
             <div className="bg-black rounded-full p-2">
                 <RightArrow width="w-4" fill="fill-white" />

@@ -4,7 +4,7 @@ export const styles = {
     'header-sm-black': 'text-black font-shippori text-2xl',
     'header-md': 'text-white font-shippori text-4xl',
     'header-md-no-color': 'font-shippori text-4xl',
-    'header-btwn-mdlg':  'text-white font-shippori text-5xl',
+    'header-btwn-mdlg':  'text-white font-shippori text-4xl xl:text-5xl',
     'header-lg': 'text-white font-shippori text-4xl lg:text-6xl',  
     'header-xl': 'text-white font-shippori text-6xl md:text-5xl lg:text-7xl xl:text-8xl',  
     'subheading': 'text-white font-manrope text-md md:text-lg lg:text-xl font-semibold',
@@ -25,5 +25,5 @@ export const styles = {
     'exp-period': 'text-white font-manrope font-semibold text-md',
     'mini-subheader': 'font-bold text-md font-shippori text-yellow tracking-widest',
     'project-container': 'border-[1px] border-white rounded-xl py-4 px-8',
-    'paragraph-text': "text-white font-manrope text-justify",
+    'paragraph-text': "lg:text-base text-sm text-white font-manrope text-justify",
 }

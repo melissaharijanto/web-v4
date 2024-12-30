@@ -8,7 +8,7 @@ import RowSpanOneCell from './RowSpanOneCell';
 
 const BentoGrid: React.FC<{ projects: ProjectProps }> = ({ projects }) => {
     return (
-        <div className="grid grid-rows-[0.375fr_0.375fr_0.375fr] grid-cols-3 w-full gap-2 mt-4">
+        <div className="flex flex-col gap-y-4 md:grid lg:grid-rows-[0.375fr_0.375fr_0.375fr] md:grid-cols-2 lg:grid-cols-3 w-full md:gap-2 mt-4">
             <RowSpanThreeCell content={projects.one} />
             <RowSpanTwoCell content={projects.two} SvgIcon={ChatIcon} />
             <RowSpanOneCell content={projects.three} />

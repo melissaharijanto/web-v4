@@ -28,8 +28,8 @@ const RowSpanTwoCell: React.FC<{
             </motion.div>
             <motion.div
                 variants={childVariantsThree}
-                className="mt-4 grid grid-cols-[3fr_7fr] gap-x-8 place-items-center">
-                <div>
+                className="mt-4 xl:grid xl:grid-cols-[3fr_7fr] gap-x-8 place-items-center">
+                <div className="xl:flex hidden">
                     <SvgIcon width="w-full" fill="fill-blue" />
                 </div>
                 <div>

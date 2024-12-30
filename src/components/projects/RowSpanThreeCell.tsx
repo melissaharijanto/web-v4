@@ -23,9 +23,7 @@ const RowSpanThreeCell: React.FC<{
                     arrowHoverColor={'fill-red'}
                 />
             </motion.div>
-            <motion.div
-                variants={childVariantsThree}
-                className="mt-4 max-w-[80%]">
+            <motion.div variants={childVariantsThree} className="mt-4">
                 <ProjectContent
                     content={content.content}
                     buttonLink={content.buttonLink}

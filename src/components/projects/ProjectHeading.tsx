@@ -29,7 +29,7 @@ const ProjectHeading: React.FC<ProjectHeadingProps> = ({
             <div>
                 <a href={projectLink} target="_blank">
                     <DiagonalArrow
-                        width="w-16"
+                        width="w-16 md:w-10 lg:w-12 xl:w-16"
                         fill={`fill-white ${groupHover} transition-all ease-in`}
                         className="group"></DiagonalArrow>
                 </a>
