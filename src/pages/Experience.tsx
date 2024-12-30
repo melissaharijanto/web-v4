@@ -1,7 +1,7 @@
 import AnimationLayout from '../components/animation/AnimationLayout';
+import ButtonWithDiagonalArrow from '../components/ButtonWithDiagonalArrow';
 import ExperienceComponent from '../components/ExperienceComponent';
 import Asterisk from '../components/svgs/Asterisk';
-import DiagonalArrow from '../components/svgs/DiagonalArrow';
 import { styles } from '../utils/css/styles';
 import {
     childVariants,
@@ -38,16 +38,12 @@ const Experience = () => {
                     <motion.div
                         variants={childVariants}
                         className="flex flex-col-reverse lg:grid lg:grid-cols-[4fr_5.5fr] mt-2 lg:gap-x-4 lg:gap-y-0 gap-y-2">
-                        <div className="flex flex-col justify-center items-end">
-                            <a
-                                href={links.resume}
-                                target="_blank"
-                                className={`${styles['button-text']} ${styles['button']} ${styles['button-with-diagonal-arrow']} w-fit mt-2`}>
-                                <span className="mb-1">More in my resume</span>
-                                <DiagonalArrow
-                                    width="w-3"
-                                    fill="fill-white"></DiagonalArrow>
-                            </a>
+                        <div className="flex flex-col justify-center items-center lg:items-end">
+                            <ButtonWithDiagonalArrow
+                                link={links.resume}
+                                label="More in my resume"
+                                className="mt-2"
+                            />
                         </div>
 
                         <div className={`${styles['header-lg']} text-left`}>

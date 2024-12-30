@@ -1,5 +1,4 @@
 import { Description, GitHub, LinkedIn } from '@mui/icons-material';
-import DiagonalArrow from '../components/svgs/DiagonalArrow';
 import { styles } from '../utils/css/styles';
 import { motion } from 'framer-motion';
 import SubheadingTitle from '../components/SubheadingTitle';
@@ -11,6 +10,7 @@ import {
     childVariantsThree,
     childVariantsTwo,
 } from '../utils/data/animation';
+import ButtonWithDiagonalArrow from '../components/ButtonWithDiagonalArrow';
 
 const About = () => {
     return (
@@ -100,16 +100,11 @@ const About = () => {
                                     collaborate on an exciting project or just
                                     chat about tech!
                                 </p>
-                                <a
-                                    href={links.email}
-                                    className={`${styles['button-text']} ${styles['button']} ${styles['button-with-diagonal-arrow']} mt-10`}>
-                                    <span className="mb-1">
-                                        Reach out via Email
-                                    </span>
-                                    <DiagonalArrow
-                                        width="w-3"
-                                        fill="fill-white"></DiagonalArrow>
-                                </a>
+                                <ButtonWithDiagonalArrow
+                                    link={links.email}
+                                    label="Reach out via Email"
+                                    className="mt-10"
+                                />
                             </div>
                         </div>
                         <div className="hidden lg:flex justify-center items-center">
