@@ -35,6 +35,11 @@ module.exports = {
       }
     },
   },
+  variants: {
+    extend: {
+        borderColor: ['hover', 'group-hover'],
+    },
+},
   plugins: [],
 }
 
