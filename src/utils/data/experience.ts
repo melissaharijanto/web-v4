@@ -22,7 +22,7 @@ export const experiences: ExperienceInterface[] = [
         textColor: "text-blue",
         company: "National University of Singapore",
         position: "Software Developer Assistant (Part-Time)",
-        period: "June 2023 - December 2024",
+        period: "June 2023 - December 2023",
         description: ["Developed a chatbot that provides student hints for assignments related to Object Oriented Programming \
             with Python and ChatGPT API, to be used in a class of 500 - 600 students under the supervision of 2 professors.",
             "Employed contextual prompt engineering to generate relevant replies according to the context of the course."],
