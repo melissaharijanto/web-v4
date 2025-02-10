@@ -1,16 +1,11 @@
 import { Description, GitHub, LinkedIn } from '@mui/icons-material';
 import { styles } from '../utils/css/styles';
-import { motion } from 'framer-motion';
 import SubheadingTitle from '../components/SubheadingTitle';
 import AboutLink from '../components/AboutLink';
 import { links } from '../utils/data/links';
 import AnimationLayout from '../components/animation/AnimationLayout';
-import {
-    childVariants,
-    childVariantsThree,
-    childVariantsTwo,
-} from '../utils/data/animation';
 import ButtonWithDiagonalArrow from '../components/ButtonWithDiagonalArrow';
+import Fade from '../components/animation/Fade';
 
 const About = () => {
     return (
@@ -18,16 +13,16 @@ const About = () => {
             className={`${styles.page} mt-4 flex justify-center items-center`}
             id="about">
             <AnimationLayout className="flex flex-col justify-center items-start bg-black">
-                <motion.div
-                    variants={childVariants}
+                <Fade
+                    variants="FROM_LEFT"
                     className="flex justify-start w-full">
                     <SubheadingTitle title="ABOUT ME" flowerFill="fill-blue" />
-                </motion.div>
-                <motion.div variants={childVariantsTwo} className="w-full">
+                </Fade>
+                <Fade variants="FROM_RIGHT" className="w-full">
                     <hr className="w-full"></hr>
-                </motion.div>
-                <motion.div
-                    variants={childVariantsThree}
+                </Fade>
+                <Fade
+                    variants="FROM_BOTTOM"
                     className="mt-4 lg:mt-8 w-full flex justify-center ">
                     <div className="w-full lg:w-[90%] flex lg:flex-row flex-col lg:text-base text-sm justify-center gap-x-8">
                         <div className="flex-col flex lg:px-0 px-2">
@@ -137,7 +132,7 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                </motion.div>
+                </Fade>
             </AnimationLayout>
         </div>
     );

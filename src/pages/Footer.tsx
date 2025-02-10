@@ -1,10 +1,9 @@
 import AnimationLayout from '../components/animation/AnimationLayout';
 import DiagonalArrow from '../components/svgs/DiagonalArrow';
 import { styles } from '../utils/css/styles';
-import { childVariantsThree } from '../utils/data/animation';
-import { motion } from 'framer-motion';
 import { footerLinks, links } from '../utils/data/links';
 import Asterisk from '../components/svgs/Asterisk';
+import Fade from '../components/animation/Fade';
 
 const Footer = () => {
     return (
@@ -16,8 +15,8 @@ const Footer = () => {
                 <div />
                 <AnimationLayout className="w-full">
                     <div className="w-full">
-                        <motion.div
-                            variants={childVariantsThree}
+                        <Fade
+                            variants="FROM_BOTTOM"
                             className="flex flex-col lg:flex-row lg:justify-start justify-center items-center gap-y-4 lg:gap-y-0 lg:gap-x-4">
                             <Asterisk
                                 width="w-20"
@@ -40,34 +39,34 @@ const Footer = () => {
                                     className="group"
                                 />
                             </a>
-                        </motion.div>
-                        <motion.div
+                        </Fade>
+                        <Fade
                             className="w-full lg:block hidden"
-                            variants={childVariantsThree}>
+                            variants="FROM_BOTTOM">
                             <hr className="w-[90%] lg:w-full mt-4"></hr>
-                        </motion.div>
-                        <motion.div
-                            variants={childVariantsThree}
+                        </Fade>
+                        <Fade
+                            variants="FROM_BOTTOM"
                             className={`${styles['paragraph-text']} !text-sm !text-left lg:grid lg:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] mx-4 gap-x-4 my-4`}>
-                            <motion.div
-                                variants={childVariantsThree}
+                            <Fade
+                                variants="FROM_BOTTOM"
                                 className="lg:block hidden">
                                 <p className="font-bold !text-yellow">
                                     Melissa Anastasia Harijanto
                                 </p>
                                 <p>National University of Singapore (NUS)</p>
                                 <p>Computer Science Undergraduate</p>
-                            </motion.div>
-                            <motion.div
-                                variants={childVariantsThree}
+                            </Fade>
+                            <Fade
+                                variants="FROM_BOTTOM"
                                 className="lg:block hidden">
                                 <p className="font-bold">What I Do</p>
                                 {footerLinks.one.map((label) => {
                                     return <p>{label.label}</p>;
                                 })}
-                            </motion.div>
-                            <motion.div
-                                variants={childVariantsThree}
+                            </Fade>
+                            <Fade
+                                variants="FROM_BOTTOM"
                                 className="flex flex-wrap gap-x-4 lg:flex-col justify-center items-center lg:justify-start lg:items-start">
                                 <p className="font-bold">Contact</p>
                                 {footerLinks.two.map((link) => {
@@ -82,9 +81,9 @@ const Footer = () => {
                                         </p>
                                     );
                                 })}
-                            </motion.div>
-                            <motion.div
-                                variants={childVariantsThree}
+                            </Fade>
+                            <Fade
+                                variants="FROM_BOTTOM"
                                 className="lg:block hidden">
                                 <p className="font-bold">Projects</p>
                                 {footerLinks.three.map((link) => {
@@ -99,8 +98,8 @@ const Footer = () => {
                                         </p>
                                     );
                                 })}
-                            </motion.div>
-                        </motion.div>
+                            </Fade>
+                        </Fade>
                     </div>
                 </AnimationLayout>
             </div>

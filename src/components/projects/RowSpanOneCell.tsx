@@ -1,19 +1,18 @@
 import { styles } from '../../utils/css/styles';
-import { childVariantsThree } from '../../utils/data/animation';
 import { ProjectProps } from '../../utils/types/ProjectProps';
+import Fade from '../animation/Fade';
 import ProjectContent from './ProjectContent';
 import ProjectHeading from './ProjectHeading';
-import { motion } from 'framer-motion';
 
 const RowSpanOneCell: React.FC<{
     content: ProjectProps[keyof ProjectProps];
 }> = ({ content }) => {
     return (
-        <motion.div
-            variants={childVariantsThree}
+        <Fade
+            variants="FROM_BOTTOM"
             className={`${styles['project-container']} row-span-1 pb-6`}>
-            <motion.div
-                variants={childVariantsThree}
+            <Fade
+                variants="FROM_BOTTOM"
                 className={`${styles['header-btwn-mdlg']} text-left !text-red flex justify-between items-center`}>
                 <ProjectHeading
                     projectName={content.name}
@@ -21,8 +20,8 @@ const RowSpanOneCell: React.FC<{
                     textColor="!text-red"
                     arrowHoverColor="fill-yellow"
                 />
-            </motion.div>
-            <motion.div variants={childVariantsThree} className="mt-4">
+            </Fade>
+            <Fade variants="FROM_BOTTOM" className="mt-4">
                 <ProjectContent
                     content={content.content}
                     buttonClass={`${styles['blue-button']}`}
@@ -30,8 +29,8 @@ const RowSpanOneCell: React.FC<{
                     buttonLink={content.buttonLink}
                 />
                 <p className={`${styles['paragraph-text']}`}></p>
-            </motion.div>
-        </motion.div>
+            </Fade>
+        </Fade>
     );
 };
 

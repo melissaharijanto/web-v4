@@ -1,4 +1,7 @@
-export const childVariants = {
+import { ReactNode } from 'react';
+import { motion } from 'framer-motion';
+
+const fromRight = {
     hidden: { x: '5vw', opacity: 0 },
     visible: {
         x: 0,
@@ -12,7 +15,7 @@ export const childVariants = {
     },
 };
 
-export const childVariantsTwo = {
+const fromLeft = {
     hidden: { x: '-5vw', opacity: 0 },
     visible: {
         x: 0,
@@ -26,7 +29,7 @@ export const childVariantsTwo = {
     },
 };
 
-export const childVariantsThree = {
+const fromBottom = {
     hidden: { y: '5vh', opacity: 0 },
     visible: {
         y: 0,
@@ -40,7 +43,7 @@ export const childVariantsThree = {
     },
 };
 
-export const childVariantsFour = {
+const fromTop = {
     hidden: { y: '-5vh', opacity: 0 },
     visible: {
         y: 0,
@@ -53,3 +56,31 @@ export const childVariantsFour = {
         transition: { type: 'tween', duration: 1 },
     },
 };
+
+type FadeVariant = 'FROM_LEFT' | 'FROM_BOTTOM' | 'FROM_RIGHT' | 'FROM_TOP';
+
+const Fade = ({
+    children,
+    variants,
+    className,
+}: {
+    children: ReactNode;
+    variants?: FadeVariant | undefined;
+    className?: string | undefined;
+}) => {
+    const variantsMapping = {
+        FROM_BOTTOM: fromBottom,
+        FROM_TOP: fromTop,
+        FROM_LEFT: fromLeft,
+        FROM_RIGHT: fromRight,
+    };
+    return (
+        <motion.div
+            variants={variants ? variantsMapping[variants] : fromBottom}
+            className={className}>
+            {children}
+        </motion.div>
+    );
+};
+
+export default Fade;

@@ -1,20 +1,19 @@
 import { styles } from '../../utils/css/styles';
-import { childVariantsThree } from '../../utils/data/animation';
 import { ProjectProps } from '../../utils/types/ProjectProps';
 import ProjectContent from './ProjectContent';
 import ProjectHeading from './ProjectHeading';
-import { motion } from 'framer-motion';
 import TravelLog from '../../assets/travel-log.gif';
+import Fade from '../animation/Fade';
 
 const RowSpanThreeCell: React.FC<{
     content: ProjectProps[keyof ProjectProps];
 }> = ({ content }) => {
     return (
-        <motion.div
-            variants={childVariantsThree}
+        <Fade
+            variants="FROM_BOTTOM"
             className={`${styles['project-container']} row-span-3`}>
-            <motion.div
-                variants={childVariantsThree}
+            <Fade
+                variants="FROM_BOTTOM"
                 className="flex justify-between items-center">
                 <ProjectHeading
                     projectName={content.name}
@@ -22,22 +21,22 @@ const RowSpanThreeCell: React.FC<{
                     textColor={'!text-blue'}
                     arrowHoverColor={'fill-red'}
                 />
-            </motion.div>
-            <motion.div variants={childVariantsThree} className="mt-4">
+            </Fade>
+            <Fade variants="FROM_BOTTOM" className="mt-4">
                 <ProjectContent
                     content={content.content}
                     buttonLink={content.buttonLink}
                     buttonLabel={'View Repository'}
                     buttonClass={`${styles['yellow-button']}`}
                 />
-            </motion.div>
+            </Fade>
             {/** PROJECT 1 IMAGE HERE */}
-            <motion.div
-                variants={childVariantsThree}
+            <Fade
+                variants="FROM_BOTTOM"
                 className="w-full flex justify-center items-center mt-8">
                 <img src={TravelLog} className="w-full" />
-            </motion.div>
-        </motion.div>
+            </Fade>
+        </Fade>
     );
 };
 
