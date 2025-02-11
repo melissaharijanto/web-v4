@@ -33,7 +33,7 @@ const About = () => {
                                     and an aspiring software engineer passionate
                                     about turning creative ideas into functional
                                     and engaging digital experiences. I focus on{' '}
-                                    <span className="text-yellow font-semibold">
+                                    <span className="text-orange dark:text-yellow font-semibold">
                                         full-stack and front-end development
                                     </span>
                                     , where I enjoy combining problem-solving
@@ -109,7 +109,9 @@ const About = () => {
                             <div className="flex flex-col items-center lg:items-start gap-y-4 pt-8 lg:pt-0">
                                 <p className={`${styles.subheading} text-left`}>
                                     Other ways to{' '}
-                                    <span className="text-yellow">connect</span>{' '}
+                                    <span className="text-orange dark:text-yellow">
+                                        connect
+                                    </span>{' '}
                                     with me:
                                 </p>
                                 <div className="flex flex-wrap justify-center flex-row gap-x-4 lg:flex-col lg:items-start lg:gap-y-4">

@@ -26,7 +26,7 @@ const NavigationBar = () => {
             <div
                 className={`flex items-center justify-between px-4 py-1 md:py-2 backdrop-blur-lg transition-all duration-300 ease-in  ${
                     isScrolled
-                        ? 'backdrop-opacity-100 bg-black/60'
+                        ? 'backdrop-opacity-100 bg-white/60 dark:bg-black/60'
                         : 'backdrop-opacity-0'
                 } z-10`}>
                 <div className="md:mx-8 ml-2 md:flex-1">
@@ -62,7 +62,7 @@ const NavigationBar = () => {
                             Contact Me
                             <DiagonalArrow
                                 width="w-3"
-                                fill="fill-white"></DiagonalArrow>
+                                fill="fill-black dark:fill-white"></DiagonalArrow>
                         </div>
                         <span className={`${styles['navbar-underline']}`} />
                     </a>
