@@ -41,7 +41,7 @@ const ExperienceComponent = ({
                     </div>
                 </div>
                 <div
-                    className={`w-full mt-4 lg:mt-0 lg:max-w-[50%] text-justify text-white ${styles['paragraph-text']}`}>
+                    className={`w-full mt-4 lg:mt-0 lg:max-w-[50%] text-justify text-black dark:text-white ${styles['paragraph-text']}`}>
                     <ul className="list-disc">
                         {description.map((desc, idx) => {
                             if (idx == 0) {
@@ -58,7 +58,7 @@ const ExperienceComponent = ({
                 </div>
             </div>
             {isLast ? null : (
-                <hr className="mt-6 bg-white w-full text-white"></hr>
+                <hr className="mt-6 w-full dark:border-white border-black"></hr>
             )}
         </div>
     );

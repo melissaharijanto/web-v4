@@ -12,7 +12,7 @@ const SmallLink: React.FC<SmallLinkProps> = ({ link, label }) => {
                 className={`inline-flex justify-center relative items-center ${styles['exp-link']} gap-x-1 hover:font-bold transition-all ease-in`}>
                 {label}
                 <span className={`${styles['navbar-underline']}`}></span>
-                <DiagonalArrow fill="fill-white" width="w-3" />
+                <DiagonalArrow fill="fill-black dark:fill-white" width="w-3" />
             </a>
         </div>
     );

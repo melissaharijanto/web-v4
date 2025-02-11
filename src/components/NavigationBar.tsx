@@ -69,11 +69,11 @@ const NavigationBar = () => {
                 </div>
                 <div className="md:hidden flex justify-end relative cursor-pointer">
                     <MenuIcon
+                        className="text-black dark:text-white"
                         sx={{
                             width: '30px',
                             transform: open ? 'rotate(90deg)' : null,
                             zIndex: 99,
-                            color: 'white',
                             transition: 'transform 150ms ease',
                         }}
                         onClick={() => setOpen(() => !open)}
