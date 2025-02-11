@@ -9,7 +9,7 @@ import Footer from './pages/Footer';
 
 const App: React.FC = () => {
     return (
-        <main className={'min-h-screen bg-black'}>
+        <main className={'min-h-screen bg-white dark:bg-black'}>
             <NavigationBar />
             <Home />
             <About />

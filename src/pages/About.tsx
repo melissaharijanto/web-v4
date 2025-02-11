@@ -12,22 +12,22 @@ const About = () => {
         <div
             className={`${styles.page} mt-4 flex justify-center items-center`}
             id="about">
-            <AnimationLayout className="flex flex-col justify-center items-start bg-black">
+            <AnimationLayout className="flex flex-col justify-center items-start bg-white dark:bg-black">
                 <Fade
                     variants="FROM_LEFT"
                     className="flex justify-start w-full">
                     <SubheadingTitle title="ABOUT ME" flowerFill="fill-blue" />
                 </Fade>
                 <Fade variants="FROM_RIGHT" className="w-full">
-                    <hr className="w-full"></hr>
+                    <hr className="w-full dark:border-white border-black"></hr>
                 </Fade>
                 <Fade
                     variants="FROM_BOTTOM"
                     className="mt-4 lg:mt-8 w-full flex justify-center ">
                     <div className="w-full lg:w-[90%] flex lg:flex-row flex-col lg:text-base text-sm justify-center gap-x-8">
                         <div className="flex-col flex lg:px-0 px-2">
-                            <div className="flex flex-col items-start">
-                                <p className="text-white font-manrope text-justify">
+                            <div className="flex flex-col items-start text-black dark:text-white">
+                                <p className="font-manrope text-justify">
                                     Hi, I’m Melissa, a final-year Computer
                                     Science undergraduate based in Singapore,
                                     and an aspiring software engineer passionate
@@ -41,12 +41,12 @@ const About = () => {
                                     truly enjoy.
                                 </p>
                                 <br />
-                                <p className="text-white font-manrope text-justify">
+                                <p className="font-manrope text-justify">
                                     Throughout my journey, I’ve had the
                                     opportunity to work on some exciting
                                     projects, such as:
                                 </p>
-                                <ul className="list-disc mx-4 text-white font-manrope text-justify">
+                                <ul className="list-disc mx-4 font-manrope text-justify">
                                     <li>
                                         Using{' '}
                                         <span className="text-red font-semibold">
@@ -75,7 +75,7 @@ const About = () => {
                                 </ul>
 
                                 <br />
-                                <p className="text-white font-manrope text-justify">
+                                <p className="font-manrope text-justify">
                                     I’m always excited to work with{' '}
                                     <span className="text-blue font-semibold">
                                         new emerging technologies
@@ -90,7 +90,7 @@ const About = () => {
                                     to.
                                 </p>
                                 <br />
-                                <p className="text-white font-manrope text-justify">
+                                <p className="font-manrope text-justify">
                                     Feel free to reach out if you’d like to
                                     collaborate on an exciting project or just
                                     chat about tech!

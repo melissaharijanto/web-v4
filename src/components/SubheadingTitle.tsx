@@ -11,7 +11,7 @@ const SubheadingTitle = ({
     return (
         <div>
             <div className="flex justify-start items-center gap-x-2 rounded-full">
-                <div className="bg-black rounded-full px-2 py-4 lg:p-4 animate-spin-slower">
+                <div className="bg-white dark:bg-black rounded-full px-2 py-4 lg:p-4 animate-spin-slower">
                     <Flower width="w-12 lg:w-20" fill={flowerFill} />
                 </div>
                 <span className={`${styles['header-lg']} mb-1 mr-3`}>
