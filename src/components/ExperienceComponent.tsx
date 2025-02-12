@@ -21,7 +21,11 @@ const ExperienceComponent = ({
                 <div className="text-left text-white flex flex-col justify-between">
                     <div className="inline-flex flex-col gap-y-1">
                         <p
-                            className={`${styles['header-md-no-color']} ${textColor}`}>
+                            className={`${styles['header-md-no-color']} ${
+                                textColor === 'text-yellow'
+                                    ? 'text-orange dark:text-yellow'
+                                    : textColor
+                            }`}>
                             {company.toUpperCase()}
                         </p>
                         <p className={`${styles['exp-position']}`}>

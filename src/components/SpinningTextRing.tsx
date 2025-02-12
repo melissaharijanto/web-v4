@@ -11,7 +11,7 @@ const SpinningTextRing = () => {
                 <TextRing
                     width="w-auto"
                     className="flex items-center justify-center animate-spin-slower"
-                    fill="fill-white"
+                    fill="fill-black dark:fill-white"
                 />
             </div>
         </div>
