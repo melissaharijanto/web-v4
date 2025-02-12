@@ -22,7 +22,7 @@ const Projects: React.FC = () => {
                     </div>
                 </Fade>
                 <Fade variants="FROM_RIGHT" className="w-full">
-                    <hr className="w-full mt-8"></hr>
+                    <hr className="w-full mt-8 border-black dark:border-white"></hr>
                 </Fade>
                 <BentoGrid projects={projects} />
             </AnimationLayout>

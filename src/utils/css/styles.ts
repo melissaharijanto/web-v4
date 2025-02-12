@@ -6,7 +6,7 @@ export const styles = {
     'header-md-no-color': 'font-shippori text-4xl',
     'header-btwn-mdlg':  'text-white dark:text-white font-shippori text-4xl xl:text-5xl',
     'header-lg': 'text-black dark:text-white font-shippori text-4xl lg:text-6xl',  
-    'header-xl': 'text-white dark:text-white font-shippori text-6xl md:text-5xl lg:text-7xl xl:text-8xl',  
+    'header-xl': 'text-black dark:text-white font-shippori text-6xl md:text-5xl lg:text-7xl xl:text-8xl',  
     'subheading': 'text-black dark:text-white font-manrope text-md md:text-lg lg:text-xl font-semibold',
     'button':'border-[1px] bg-black text-black border-white border-[1px] hover:bg-black-pressed transition-all ease-in hover:font-bold rounded-full',
     'button-without-arrow':'py-2 px-5',
