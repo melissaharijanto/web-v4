@@ -3,6 +3,7 @@ import {
     ExperienceComponentInterface,
     Link,
 } from '../utils/types/ExperienceInterface';
+import HorizontalLine from './HorizontalLine';
 import SmallLink from './SmallLink';
 
 const ExperienceComponent = ({
@@ -61,9 +62,7 @@ const ExperienceComponent = ({
                     </ul>
                 </div>
             </div>
-            {isLast ? null : (
-                <hr className="mt-6 w-full dark:border-white border-black"></hr>
-            )}
+            {isLast ? null : <HorizontalLine className="mt-6" />}
         </div>
     );
 };

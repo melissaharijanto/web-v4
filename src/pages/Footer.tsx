@@ -4,6 +4,7 @@ import { styles } from '../utils/css/styles';
 import { footerLinks, links } from '../utils/data/links';
 import Asterisk from '../components/svgs/Asterisk';
 import Fade from '../components/animation/Fade';
+import HorizontalLine from '../components/HorizontalLine';
 
 const Footer = () => {
     return (
@@ -45,7 +46,10 @@ const Footer = () => {
                         <Fade
                             className="w-full lg:block hidden"
                             variants="FROM_BOTTOM">
-                            <hr className="w-[90%] lg:w-full mt-4 dark:border-white border-black"></hr>
+                            <HorizontalLine
+                                width="w-[90%] lg:w-full"
+                                className="mt-4"
+                            />
                         </Fade>
                         <Fade
                             variants="FROM_BOTTOM"

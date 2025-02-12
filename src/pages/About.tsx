@@ -6,6 +6,7 @@ import { links } from '../utils/data/links';
 import AnimationLayout from '../components/animation/AnimationLayout';
 import ButtonWithDiagonalArrow from '../components/ButtonWithDiagonalArrow';
 import Fade from '../components/animation/Fade';
+import HorizontalLine from '../components/HorizontalLine';
 
 const About = () => {
     return (
@@ -19,7 +20,7 @@ const About = () => {
                     <SubheadingTitle title="ABOUT ME" flowerFill="fill-blue" />
                 </Fade>
                 <Fade variants="FROM_RIGHT" className="w-full">
-                    <hr className="w-full dark:border-white border-black"></hr>
+                    <HorizontalLine />
                 </Fade>
                 <Fade
                     variants="FROM_BOTTOM"
@@ -103,7 +104,7 @@ const About = () => {
                             </div>
                         </div>
                         <div className="hidden lg:flex justify-center items-center">
-                            <div className="w-[0.5px] bg-white min-h-full py-4"></div>
+                            <div className="w-[1px] bg-black dark:bg-white min-h-full py-4"></div>
                         </div>
                         <div>
                             <div className="flex flex-col items-center lg:items-start gap-y-4 pt-8 lg:pt-0">
