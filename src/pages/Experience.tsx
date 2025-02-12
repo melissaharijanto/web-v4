@@ -16,7 +16,7 @@ const Experience = () => {
             <AnimationLayout className="flex flex-col justify-center items-center">
                 <Fade variants="FROM_RIGHT">
                     <p
-                        className={`${styles['mini-subheader']} lg:!text-dark-green dark:lg:!text-yellow !text-blue`}>
+                        className={`${styles['mini-subheader']} !text-dark-green dark:lg:!text-yellow dark:!text-blue`}>
                         {'{ MY WORK EXPERIENCE }'}
                     </p>
                 </Fade>

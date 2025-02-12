@@ -34,7 +34,7 @@ const About = () => {
                                     and an aspiring software engineer passionate
                                     about turning creative ideas into functional
                                     and engaging digital experiences. I focus on{' '}
-                                    <span className="text-dark-green dark:text-yellow font-semibold">
+                                    <span className="p-1 bg-gradient-to-r from-green/40 to-green/40 bg-no-repeat bg-[length:100%_50%] bg-[position:0%_60%] dark:bg-none dark:text-yellow font-semibold">
                                         full-stack and front-end development
                                     </span>
                                     , where I enjoy combining problem-solving
@@ -50,15 +50,15 @@ const About = () => {
                                 <ul className="list-disc mx-4 font-manrope text-justify">
                                     <li>
                                         Using{' '}
-                                        <span className="text-red font-semibold">
+                                        <span className="p-1 bg-gradient-to-r from-red/40 to-red/40 bg-no-repeat bg-[length:100%_50%] bg-[position:0%_60%] dark:bg-none dark:text-red font-semibold">
                                             Generative AI APIs
                                         </span>{' '}
                                         with other tools like{' '}
-                                        <span className="text-red font-semibold">
+                                        <span className="p-1 bg-gradient-to-r from-red/40 to-red/40 bg-no-repeat bg-[length:100%_50%] bg-[position:0%_60%] dark:bg-none dark:text-red font-semibold">
                                             Streamlit
                                         </span>{' '}
                                         and{' '}
-                                        <span className="text-red font-semibold">
+                                        <span className="p-1 bg-gradient-to-r from-red/40 to-red/40 bg-no-repeat bg-[length:100%_50%] bg-[position:0%_60%] dark:bg-none dark:text-red font-semibold">
                                             Python
                                         </span>{' '}
                                         to create tools for enhanced
@@ -66,7 +66,7 @@ const About = () => {
                                     </li>
                                     <li>
                                         Developing a student forum with{' '}
-                                        <span className="text-red font-semibold">
+                                        <span className="p-1 bg-gradient-to-r from-red/40 to-red/40 bg-no-repeat bg-[length:100%_50%] bg-[position:0%_60%] dark:bg-none dark:text-red font-semibold">
                                             React Typescript
                                         </span>{' '}
                                         that helps over 100 users connect and
@@ -78,11 +78,11 @@ const About = () => {
                                 <br />
                                 <p className="font-manrope text-justify">
                                     I’m always excited to work with{' '}
-                                    <span className="text-blue font-semibold">
+                                    <span className="p-1 bg-gradient-to-r from-blue/40 to-blue/40 bg-no-repeat bg-[length:100%_50%] bg-[position:0%_60%] dark:bg-none dark:text-blue font-semibold">
                                         new emerging technologies
                                     </span>{' '}
                                     to build{' '}
-                                    <span className="text-blue font-semibold">
+                                    <span className="p-1 bg-gradient-to-r from-blue/40 to-blue/40 bg-no-repeat bg-[length:100%_50%] bg-[position:0%_60%] dark:bg-none dark:text-blue font-semibold">
                                         efficient, scalable, and user-friendly
                                         applications
                                     </span>
@@ -110,7 +110,7 @@ const About = () => {
                             <div className="flex flex-col items-center lg:items-start gap-y-4 pt-8 lg:pt-0">
                                 <p className={`${styles.subheading} text-left`}>
                                     Other ways to{' '}
-                                    <span className="text-dark-green dark:text-yellow">
+                                    <span className="p-1 bg-gradient-to-r from-green/40 to-green/40 bg-no-repeat bg-[length:100%_50%] bg-[position:0%_60%] dark:bg-none dark:text-yellow">
                                         connect
                                     </span>{' '}
                                     with me:

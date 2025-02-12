@@ -61,7 +61,7 @@ const Home = () => {
                 <Fade variants="FROM_RIGHT" className="mt-8">
                     <p className={`${styles['subheading']}`}>
                         Creating substantial impact through{' '}
-                        <span className="text-dark-green dark:text-yellow">
+                        <span className="p-1 bg-gradient-to-r from-green/40 to-green/40 bg-no-repeat bg-[length:100%_50%] bg-[position:0%_60%] dark:bg-none dark:p-0 dark:text-yellow">
                             software
                         </span>
                         .
