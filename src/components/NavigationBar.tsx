@@ -4,6 +4,7 @@ import { links } from '../utils/data/links';
 import DiagonalArrow from './svgs/DiagonalArrow';
 import Logo from './svgs/Logo';
 import MenuIcon from '@mui/icons-material/Menu';
+import ThemeToggle from './ThemeToggle';
 
 const NavigationBar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -31,7 +32,10 @@ const NavigationBar = () => {
                 } z-10`}>
                 <div className="md:mx-8 ml-2 md:flex-1">
                     <a href="#home">
-                        <Logo width="w-12 md:w-16" />
+                        <Logo
+                            width="w-12 md:w-16"
+                            fill="dark:fill-white fill-black "
+                        />
                     </a>
                 </div>
                 <div className="md:flex hidden flex md:flex-1 gap-x-8 items-center justify-center">
@@ -53,6 +57,7 @@ const NavigationBar = () => {
                         Projects
                         <span className={`${styles['navbar-underline']}`} />
                     </a>
+                    <ThemeToggle />
                 </div>
                 <div className="md:flex hidden mx-8 flex md:flex-1 items-center justify-end">
                     <a
@@ -85,24 +90,29 @@ const NavigationBar = () => {
                 <div
                     className={`md:hidden flex-col ${
                         open ? 'flex' : 'hidden'
-                    } items-end mt-2 mr-2 bg-black/60 backdrop-blur-lg border-[1px] rounded-xl z-[99] 
-                    } !text-base px-6 py-2`}>
-                    <a href={`#home`} className={`${styles['navbar-link']}`}>
+                    } items-end mt-2 mr-2 bg-white/60 dark:bg-black/60 backdrop-blur-lg border-[1px] border-black dark:border-white rounded-xl z-[99] 
+                    } !text-base px-6 py-2 gap-y-2`}>
+                    <a
+                        href={`#home`}
+                        className={`${styles['navbar-link']} !text-base`}>
                         Home
                     </a>
-                    <a href={`#about`} className={`${styles['navbar-link']}`}>
+                    <a
+                        href={`#about`}
+                        className={`${styles['navbar-link']} !text-base`}>
                         About
                     </a>
                     <a
                         href={`#experience`}
-                        className={`${styles['navbar-link']}`}>
+                        className={`${styles['navbar-link']} !text-base`}>
                         Experience
                     </a>
                     <a
                         href={`#projects`}
-                        className={`${styles['navbar-link']}`}>
+                        className={`${styles['navbar-link']} !text-base`}>
                         Projects
                     </a>
+                    <ThemeToggle />
                 </div>
             </div>
         </div>

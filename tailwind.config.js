@@ -28,7 +28,7 @@ module.exports = {
         "black-pressed": "#121212",
         "red-pressed": "#d85c56",
         "yellow-pressed":"#d99b43",
-        orange: '#c76e00',
+        orange: '#ec9413',
       },
       animation: {
         'spin-slow': 'spin 4s linear infinite',
