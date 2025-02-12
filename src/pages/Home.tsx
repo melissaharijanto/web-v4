@@ -19,7 +19,7 @@ const Home = () => {
 
             <FlowerTwo
                 width="w-64"
-                fill="fill-yellow"
+                fill="fill-green dark:fill-yellow"
                 className="bottom-0 left-[-8vw] left-[-15vw] md:left-[-10vw] lg:left-[-5vw] absolute md:w-80 opacity-30 animate-zoom-bounce"
             />
             <AnimationLayout className="w-full flex flex-col justify-center items-center min-h-screen">
@@ -32,12 +32,12 @@ const Home = () => {
                     <Fade
                         variants="FROM_RIGHT"
                         className="w-full flex flex-col justify-center items-center">
-                        <div className="w-full flex justify-center md:!text-white text-red md:justify-between items-center">
+                        <div className="w-full flex justify-center text-black dark:md:!text-white dark:text-red md:justify-between items-center">
                             <div>MELISSA</div>
                             <div className="md:flex hidden">A.</div>
                             <div className="md:flex hidden">HARIJANTO</div>
                         </div>
-                        <div className="w-full md:flex justify-between items-center gap-x-4 hidden">
+                        <div className="w-full md:flex justify-between dark:text-white text-black items-center gap-x-4 hidden">
                             <div>SOFTWARE</div>
                             <div className="animate-spin-slow flex justify-center items-center mt-3 lg:mt-4">
                                 <Flower
@@ -61,7 +61,10 @@ const Home = () => {
                 <Fade variants="FROM_RIGHT" className="mt-8">
                     <p className={`${styles['subheading']}`}>
                         Creating substantial impact through{' '}
-                        <span className="text-yellow">software</span>.
+                        <span className="text-dark-green dark:text-yellow">
+                            software
+                        </span>
+                        .
                     </p>
                 </Fade>
 

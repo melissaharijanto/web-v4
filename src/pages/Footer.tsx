@@ -4,6 +4,7 @@ import { styles } from '../utils/css/styles';
 import { footerLinks, links } from '../utils/data/links';
 import Asterisk from '../components/svgs/Asterisk';
 import Fade from '../components/animation/Fade';
+import HorizontalLine from '../components/HorizontalLine';
 
 const Footer = () => {
     return (
@@ -32,10 +33,12 @@ const Footer = () => {
                             </p>
                             <a
                                 href={links.email}
-                                className="border-2 rounded-full p-3 lg:p-4 group border-yellow transition-all ease-in mt-3 hover:motion-safe:animate-pulse">
+                                className="border-2 rounded-full p-3 lg:p-4 group border-orange dark:border-yellow transition-all ease-in mt-3 hover:motion-safe:animate-pulse">
                                 <DiagonalArrow
                                     width="w-6 lg:w-10"
-                                    fill={'fill-yellow transition-all ease-in'}
+                                    fill={
+                                        'fill-orange dark:fill-yellow transition-all ease-in'
+                                    }
                                     className="group"
                                 />
                             </a>
@@ -43,7 +46,10 @@ const Footer = () => {
                         <Fade
                             className="w-full lg:block hidden"
                             variants="FROM_BOTTOM">
-                            <hr className="w-[90%] lg:w-full mt-4"></hr>
+                            <HorizontalLine
+                                width="w-[90%] lg:w-full"
+                                className="mt-4"
+                            />
                         </Fade>
                         <Fade
                             variants="FROM_BOTTOM"
@@ -51,7 +57,7 @@ const Footer = () => {
                             <Fade
                                 variants="FROM_BOTTOM"
                                 className="lg:block hidden">
-                                <p className="font-bold !text-yellow">
+                                <p className="font-bold !text-dark-green dark:!text-yellow">
                                     Melissa Anastasia Harijanto
                                 </p>
                                 <p>National University of Singapore (NUS)</p>

@@ -5,6 +5,7 @@ import BentoGrid from '../components/projects/BentoGrid';
 import { projects } from '../utils/data/projects';
 import React from 'react';
 import Fade from '../components/animation/Fade';
+import HorizontalLine from '../components/HorizontalLine';
 
 const Projects: React.FC = () => {
     return (
@@ -22,7 +23,7 @@ const Projects: React.FC = () => {
                     </div>
                 </Fade>
                 <Fade variants="FROM_RIGHT" className="w-full">
-                    <hr className="w-full mt-8"></hr>
+                    <HorizontalLine className="mt-8" />
                 </Fade>
                 <BentoGrid projects={projects} />
             </AnimationLayout>

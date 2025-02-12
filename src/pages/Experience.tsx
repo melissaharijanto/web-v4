@@ -2,6 +2,7 @@ import AnimationLayout from '../components/animation/AnimationLayout';
 import Fade from '../components/animation/Fade';
 import ButtonWithDiagonalArrow from '../components/ButtonWithDiagonalArrow';
 import ExperienceComponent from '../components/ExperienceComponent';
+import HorizontalLine from '../components/HorizontalLine';
 import Asterisk from '../components/svgs/Asterisk';
 import { styles } from '../utils/css/styles';
 import { experiences } from '../utils/data/experience';
@@ -15,7 +16,7 @@ const Experience = () => {
             <AnimationLayout className="flex flex-col justify-center items-center">
                 <Fade variants="FROM_RIGHT">
                     <p
-                        className={`${styles['mini-subheader']} lg:!text-yellow !text-blue`}>
+                        className={`${styles['mini-subheader']} lg:!text-dark-green dark:lg:!text-yellow !text-blue`}>
                         {'{ MY WORK EXPERIENCE }'}
                     </p>
                 </Fade>
@@ -47,7 +48,7 @@ const Experience = () => {
                     </Fade>
                 </div>
                 <Fade variants="FROM_BOTTOM" className="w-full">
-                    <hr className="w-full mt-8"></hr>
+                    <HorizontalLine className="mt-8" />
                 </Fade>
                 <Fade
                     variants="FROM_BOTTOM"

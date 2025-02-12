@@ -3,6 +3,7 @@ import {
     ExperienceComponentInterface,
     Link,
 } from '../utils/types/ExperienceInterface';
+import HorizontalLine from './HorizontalLine';
 import SmallLink from './SmallLink';
 
 const ExperienceComponent = ({
@@ -21,7 +22,11 @@ const ExperienceComponent = ({
                 <div className="text-left text-white flex flex-col justify-between">
                     <div className="inline-flex flex-col gap-y-1">
                         <p
-                            className={`${styles['header-md-no-color']} ${textColor}`}>
+                            className={`${styles['header-md-no-color']} ${
+                                textColor === 'text-yellow'
+                                    ? 'text-green dark:text-yellow'
+                                    : textColor
+                            }`}>
                             {company.toUpperCase()}
                         </p>
                         <p className={`${styles['exp-position']}`}>
@@ -41,7 +46,7 @@ const ExperienceComponent = ({
                     </div>
                 </div>
                 <div
-                    className={`w-full mt-4 lg:mt-0 lg:max-w-[50%] text-justify text-white ${styles['paragraph-text']}`}>
+                    className={`w-full mt-4 lg:mt-0 lg:max-w-[50%] text-justify text-black dark:text-white ${styles['paragraph-text']}`}>
                     <ul className="list-disc">
                         {description.map((desc, idx) => {
                             if (idx == 0) {
@@ -57,9 +62,7 @@ const ExperienceComponent = ({
                     </ul>
                 </div>
             </div>
-            {isLast ? null : (
-                <hr className="mt-6 bg-white w-full text-white"></hr>
-            )}
+            {isLast ? null : <HorizontalLine className="mt-6" />}
         </div>
     );
 };

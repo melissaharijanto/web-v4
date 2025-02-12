@@ -20,7 +20,7 @@ const RowSpanTwoCell: React.FC<{
                     <ProjectHeading
                         projectName={content.name}
                         projectLink={content.arrowLink}
-                        textColor="!text-yellow"
+                        textColor="!text-green dark:!text-yellow"
                         arrowHoverColor="fill-blue"
                     />
                 </div>

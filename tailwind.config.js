@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
@@ -27,6 +28,9 @@ module.exports = {
         "black-pressed": "#121212",
         "red-pressed": "#d85c56",
         "yellow-pressed":"#d99b43",
+        green: '#4cbb75',
+        "green-pressed": "#3a965c",
+        "dark-green": "#2c9575"
       },
       animation: {
         'spin-slow': 'spin 4s linear infinite',

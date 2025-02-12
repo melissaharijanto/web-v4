@@ -6,34 +6,35 @@ import { links } from '../utils/data/links';
 import AnimationLayout from '../components/animation/AnimationLayout';
 import ButtonWithDiagonalArrow from '../components/ButtonWithDiagonalArrow';
 import Fade from '../components/animation/Fade';
+import HorizontalLine from '../components/HorizontalLine';
 
 const About = () => {
     return (
         <div
             className={`${styles.page} mt-4 flex justify-center items-center`}
             id="about">
-            <AnimationLayout className="flex flex-col justify-center items-start bg-black">
+            <AnimationLayout className="flex flex-col justify-center items-start bg-white dark:bg-black">
                 <Fade
                     variants="FROM_LEFT"
                     className="flex justify-start w-full">
                     <SubheadingTitle title="ABOUT ME" flowerFill="fill-blue" />
                 </Fade>
                 <Fade variants="FROM_RIGHT" className="w-full">
-                    <hr className="w-full"></hr>
+                    <HorizontalLine />
                 </Fade>
                 <Fade
                     variants="FROM_BOTTOM"
                     className="mt-4 lg:mt-8 w-full flex justify-center ">
-                    <div className="w-full lg:w-[90%] flex lg:flex-row flex-col lg:text-base text-sm justify-center gap-x-8">
+                    <div className="w-full lg:w-[90%] flex lg:flex-row flex-col font-medium lg:text-base text-sm justify-center gap-x-8">
                         <div className="flex-col flex lg:px-0 px-2">
-                            <div className="flex flex-col items-start">
-                                <p className="text-white font-manrope text-justify">
+                            <div className="flex flex-col items-start text-black dark:text-white">
+                                <p className="font-manrope text-justify">
                                     Hi, I’m Melissa, a final-year Computer
                                     Science undergraduate based in Singapore,
                                     and an aspiring software engineer passionate
                                     about turning creative ideas into functional
                                     and engaging digital experiences. I focus on{' '}
-                                    <span className="text-yellow font-semibold">
+                                    <span className="text-dark-green dark:text-yellow font-semibold">
                                         full-stack and front-end development
                                     </span>
                                     , where I enjoy combining problem-solving
@@ -41,12 +42,12 @@ const About = () => {
                                     truly enjoy.
                                 </p>
                                 <br />
-                                <p className="text-white font-manrope text-justify">
+                                <p className="font-manrope text-justify">
                                     Throughout my journey, I’ve had the
                                     opportunity to work on some exciting
                                     projects, such as:
                                 </p>
-                                <ul className="list-disc mx-4 text-white font-manrope text-justify">
+                                <ul className="list-disc mx-4 font-manrope text-justify">
                                     <li>
                                         Using{' '}
                                         <span className="text-red font-semibold">
@@ -75,7 +76,7 @@ const About = () => {
                                 </ul>
 
                                 <br />
-                                <p className="text-white font-manrope text-justify">
+                                <p className="font-manrope text-justify">
                                     I’m always excited to work with{' '}
                                     <span className="text-blue font-semibold">
                                         new emerging technologies
@@ -90,7 +91,7 @@ const About = () => {
                                     to.
                                 </p>
                                 <br />
-                                <p className="text-white font-manrope text-justify">
+                                <p className="font-manrope text-justify">
                                     Feel free to reach out if you’d like to
                                     collaborate on an exciting project or just
                                     chat about tech!
@@ -103,13 +104,15 @@ const About = () => {
                             </div>
                         </div>
                         <div className="hidden lg:flex justify-center items-center">
-                            <div className="w-[0.5px] bg-white min-h-full py-4"></div>
+                            <div className="w-[1px] bg-black dark:bg-white min-h-full py-4"></div>
                         </div>
                         <div>
                             <div className="flex flex-col items-center lg:items-start gap-y-4 pt-8 lg:pt-0">
                                 <p className={`${styles.subheading} text-left`}>
                                     Other ways to{' '}
-                                    <span className="text-yellow">connect</span>{' '}
+                                    <span className="text-dark-green dark:text-yellow">
+                                        connect
+                                    </span>{' '}
                                     with me:
                                 </p>
                                 <div className="flex flex-wrap justify-center flex-row gap-x-4 lg:flex-col lg:items-start lg:gap-y-4">
