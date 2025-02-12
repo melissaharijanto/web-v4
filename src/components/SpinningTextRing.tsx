@@ -5,7 +5,7 @@ const SpinningTextRing = () => {
     return (
         <div className="relative flex items-center justify-center w-24 rounded-full">
             <div className="w-full flex justify-center items-center">
-                <Sparkle width="w-16" fill="fill-yellow" />
+                <Sparkle width="w-16" fill="fill-green dark:fill-yellow" />
             </div>
             <div className="absolute w-full h-full flex items-center justify-center">
                 <TextRing

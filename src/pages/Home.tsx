@@ -19,7 +19,7 @@ const Home = () => {
 
             <FlowerTwo
                 width="w-64"
-                fill="fill-yellow"
+                fill="fill-green dark:fill-yellow"
                 className="bottom-0 left-[-8vw] left-[-15vw] md:left-[-10vw] lg:left-[-5vw] absolute md:w-80 opacity-30 animate-zoom-bounce"
             />
             <AnimationLayout className="w-full flex flex-col justify-center items-center min-h-screen">
@@ -61,7 +61,7 @@ const Home = () => {
                 <Fade variants="FROM_RIGHT" className="mt-8">
                     <p className={`${styles['subheading']}`}>
                         Creating substantial impact through{' '}
-                        <span className="text-orange dark:text-yellow">
+                        <span className="text-dark-green dark:text-yellow">
                             software
                         </span>
                         .

@@ -25,7 +25,7 @@ const About = () => {
                 <Fade
                     variants="FROM_BOTTOM"
                     className="mt-4 lg:mt-8 w-full flex justify-center ">
-                    <div className="w-full lg:w-[90%] flex lg:flex-row flex-col lg:text-base text-sm justify-center gap-x-8">
+                    <div className="w-full lg:w-[90%] flex lg:flex-row flex-col font-medium lg:text-base text-sm justify-center gap-x-8">
                         <div className="flex-col flex lg:px-0 px-2">
                             <div className="flex flex-col items-start text-black dark:text-white">
                                 <p className="font-manrope text-justify">
@@ -34,7 +34,7 @@ const About = () => {
                                     and an aspiring software engineer passionate
                                     about turning creative ideas into functional
                                     and engaging digital experiences. I focus on{' '}
-                                    <span className="text-orange dark:text-yellow font-semibold">
+                                    <span className="text-dark-green dark:text-yellow font-semibold">
                                         full-stack and front-end development
                                     </span>
                                     , where I enjoy combining problem-solving
@@ -110,7 +110,7 @@ const About = () => {
                             <div className="flex flex-col items-center lg:items-start gap-y-4 pt-8 lg:pt-0">
                                 <p className={`${styles.subheading} text-left`}>
                                     Other ways to{' '}
-                                    <span className="text-orange dark:text-yellow">
+                                    <span className="text-dark-green dark:text-yellow">
                                         connect
                                     </span>{' '}
                                     with me:

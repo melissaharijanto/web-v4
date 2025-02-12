@@ -57,7 +57,7 @@ const Footer = () => {
                             <Fade
                                 variants="FROM_BOTTOM"
                                 className="lg:block hidden">
-                                <p className="font-bold !text-orange dark:!text-yellow">
+                                <p className="font-bold !text-dark-green dark:!text-yellow">
                                     Melissa Anastasia Harijanto
                                 </p>
                                 <p>National University of Singapore (NUS)</p>

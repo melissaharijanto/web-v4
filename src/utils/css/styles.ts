@@ -13,7 +13,7 @@ export const styles = {
     'button-with-diagonal-arrow': 'py-2 px-5 flex gap-x-2 justify-center items-center',
     'blue-button':'border-[1px] text-black border-blue bg-blue hover:bg-blue-pressed hover:border-blue-pressed rounded-full transition-all ease-in hover:font-bold',
     'red-button':'border-[1px] text-black border-red bg-red hover:bg-red-pressed hover:border-red-pressed rounded-full transition-all ease-in hover:font-bold',
-    'yellow-button':'border-[1px] text-black border-yellow bg-orange dark:bg-yellow hover:bg-yellow-pressed hover:border-yellow-pressed rounded-full transition-all ease-in hover:font-bold',
+    'yellow-button':'border-[1px] text-black border-green dark:border-yellow bg-green dark:bg-yellow dark:hover:bg-yellow-pressed dark:hover:border-yellow-pressed hover:bg-green-pressed hover:border-green-pressed rounded-full transition-all ease-in hover:font-bold',
     'button-with-right-arrow':'pl-4 pr-2 py-2 gap-x-1 flex items-center justify-between',
     'subheading-black': 'text-black font-manrope text-xl font-semibold',
     'button-text': 'text-white font-manrope text-lg font-semibold',
@@ -23,7 +23,7 @@ export const styles = {
     'exp-link': 'text-black dark:text-white font-manrope font-semibold text-sm hover:font-bold transition-all ease-in relative inline-block group',
     'exp-position': 'text-black dark:text-white font-manrope font-semibold text-lg',
     'exp-period': 'text-black dark:text-white font-manrope font-semibold text-md',
-    'mini-subheader': 'font-bold text-md font-shippori text-orange dark:text-yellow tracking-widest',
+    'mini-subheader': 'font-bold text-md font-shippori text-green dark:text-yellow tracking-widest',
     'project-container': 'border-[1px] border-black dark:border-white rounded-xl py-4 px-8',
-    'paragraph-text': "lg:text-base text-sm text-black dark:text-white font-manrope text-justify",
+    'paragraph-text': "lg:text-base text-sm text-black dark:text-white font-manrope font-medium text-justify",
 }

@@ -24,7 +24,7 @@ const ExperienceComponent = ({
                         <p
                             className={`${styles['header-md-no-color']} ${
                                 textColor === 'text-yellow'
-                                    ? 'text-orange dark:text-yellow'
+                                    ? 'text-green dark:text-yellow'
                                     : textColor
                             }`}>
                             {company.toUpperCase()}
